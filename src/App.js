@@ -8,6 +8,7 @@ import Stories from './Components/Pages/Stories';
 import ContactUs from './Components/Pages/ContactUs';
 import Home from './Components/Pages/Home';
 import NavBar from "./Components/NavBar";
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/contactus" component={ContactUs} />
         <Redirect to="/" />
       </Switch>
+      <Footer />
     </div>
   );
 }

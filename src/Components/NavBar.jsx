@@ -1,5 +1,6 @@
 import React from 'react'
 import {NavLink} from "react-router-dom";
+import "../Components/NavBar.css";
 
 function NavBar() {
     return (
@@ -28,7 +29,7 @@ function NavBar() {
         <NavLink exact activeClassName="menu_active" className="nav-link" to="/contactus">Contact Us</NavLink>
       </li>
       <li className="nav-item">
-        <NavLink exact activeClassName="menu_active" className="nav-link" to="/">Sign Up</NavLink>
+        <NavLink exact activeClassName="menu_active" className="nav-link" to="/"><button type="button" class="btn btn-danger signup_button_edit">Sign Up</button></NavLink>
       </li>
     </ul>
   </div>
