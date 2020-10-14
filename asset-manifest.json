@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/amakein-wedding-moodz/static/css/main.8985c9c1.chunk.css",
+    "main.js": "/amakein-wedding-moodz/static/js/main.da51655e.chunk.js",
+    "main.js.map": "/amakein-wedding-moodz/static/js/main.da51655e.chunk.js.map",
+    "runtime-main.js": "/amakein-wedding-moodz/static/js/runtime-main.0e0d624c.js",
+    "runtime-main.js.map": "/amakein-wedding-moodz/static/js/runtime-main.0e0d624c.js.map",
+    "static/css/2.974c742c.chunk.css": "/amakein-wedding-moodz/static/css/2.974c742c.chunk.css",
+    "static/js/2.90550b0d.chunk.js": "/amakein-wedding-moodz/static/js/2.90550b0d.chunk.js",
+    "static/js/2.90550b0d.chunk.js.map": "/amakein-wedding-moodz/static/js/2.90550b0d.chunk.js.map",
+    "index.html": "/amakein-wedding-moodz/index.html",
+    "precache-manifest.785a9363b139f9aa1719f7c46fe2e9c4.js": "/amakein-wedding-moodz/precache-manifest.785a9363b139f9aa1719f7c46fe2e9c4.js",
+    "service-worker.js": "/amakein-wedding-moodz/service-worker.js",
+    "static/css/2.974c742c.chunk.css.map": "/amakein-wedding-moodz/static/css/2.974c742c.chunk.css.map",
+    "static/css/main.8985c9c1.chunk.css.map": "/amakein-wedding-moodz/static/css/main.8985c9c1.chunk.css.map",
+    "static/js/2.90550b0d.chunk.js.LICENSE.txt": "/amakein-wedding-moodz/static/js/2.90550b0d.chunk.js.LICENSE.txt",
+    "static/media/img-1.jpg": "/amakein-wedding-moodz/static/media/img-1.ffb198be.jpg",
+    "static/media/img-home-background.JPG": "/amakein-wedding-moodz/static/media/img-home-background.cbad43ab.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e0d624c.js",
+    "static/css/2.974c742c.chunk.css",
+    "static/js/2.90550b0d.chunk.js",
+    "static/css/main.8985c9c1.chunk.css",
+    "static/js/main.da51655e.chunk.js"
+  ]
+}
