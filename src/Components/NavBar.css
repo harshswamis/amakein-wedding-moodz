@@ -26,6 +26,7 @@
 
   .nav_menu_text:hover {
     color: #802c6e;
+    font-weight: bolder;
   }
   
   .menu_active {

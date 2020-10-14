@@ -3,11 +3,36 @@
 }
 
 .footer-link {
+    font-size: x-small;
+    text-decoration: none;
+    color: #f7aa35;
+}
+
+.footer-link:hover {
+    font-size: x-small;
+    text-decoration: none;
+    color: #ffee00;
+}
+
+.right_footer_text {
     font-size: small;
     text-decoration: none;
     color: #f7aa35;
 }
 
-.mycol_1 {
-    background-color: floralwhite;
+.right_footer_text:hover {
+    font-size: small;
+    text-decoration: none;
+    color: #ffee00;
 }
+
+
+.form-control {
+font-size: x-small;
+width: 15vw;
+}
+
+.btn_footer_submit {
+    font-size: x-small;
+    width: 5vw;
+    }

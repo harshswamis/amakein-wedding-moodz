@@ -5,6 +5,7 @@ import "../Components/NavBar.css";
 function NavBar() {
     return (
 <>
+<section>
 <div className="container-fluid nav_bg">
     <div className="row">
          <div className="col-10 mx-auto">
@@ -34,9 +35,14 @@ function NavBar() {
     </ul>
   </div>
 </nav>
+
+<div data-spy="scroll" data-target="#navbar-example3" data-offset="0" tabindex="0">
+  
+</div>
          </div>
     </div>
 </div>
+</section>
         </>
     )
 }

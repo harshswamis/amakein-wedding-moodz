@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 .my-col {
@@ -67,7 +67,7 @@
       padding: 0em;
       font-family: 'Playfair Display', serif;
       color: #F0326E;
-      font-size: 35px;
+      font-size: 32px;
       padding-bottom: 15px;
       border-bottom-style: solid;
       border-bottom-color: #F0326E;
