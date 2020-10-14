@@ -1,3 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
+.card {
+    width: 13rem;
+    margin:auto;
+    border-radius: 12%;
+    background-color: rgb(41, 23, 23);
+    border: none;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 12vw;
+    object-fit: cover;
+    border-radius: 12%;
+}
+
+.card-body {
+    height: 7vw;
+}
+
+.card-title {
+    padding-bottom: 1%;
+    font-size:  1vw;
+    color: whitesmoke;
+}
+
+.card-text {
+    padding: 0%;
+    font-size: 0.8vw;
+    color: #f7aa35;
+}
+
+#cards_carousel  .carousel-control-prev, #cards_carousel  .carousel-control-next{
+    top: 40%;
+    bottom: 40%;
+    height: 50px;
+    width: 50px;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-color: #f0326e;
+}

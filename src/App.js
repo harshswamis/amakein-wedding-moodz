@@ -9,6 +9,7 @@ import ContactUs from './Components/Pages/ContactUs';
 import Home from './Components/Pages/Home';
 import NavBar from "./Components/NavBar";
 import Footer from './Components/Footer';
+import Contactus from './Components/Pages/ContactUs';
 
 function App() {
   return (

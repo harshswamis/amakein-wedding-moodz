@@ -13,7 +13,7 @@ function Categories() {
             <h1 className="text-center categories_text">Categories</h1>
         </div>
         <div className="col-md-5 text-center">
-            <button type="button" class="btn btn-danger button_edit">View All</button>
+            <button type="button" class="btn btn-danger shadow-none button_edit">View All</button>
         </div>
     </div>
     <div className="row my-4 align-items-center">
