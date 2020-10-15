@@ -1,6 +1,8 @@
 import React from 'react'
 import {NavLink} from "react-router-dom";
 import "../Components/NavBar.css";
+import "./Pages/Modals/SignUpMobileLogin"
+import SignUpMobileLogin from './Pages/Modals/SignUpMobileLogin';
 
 function NavBar() {
     return (
@@ -30,7 +32,10 @@ function NavBar() {
         <NavLink exact activeClassName="menu_active" className="nav-link" to="/contactus"><span className="nav_menu_text">Contact Us</span></NavLink>
       </li>
       <li className="nav-item">
-        <NavLink exact activeClassName="menu_active" className="nav-link" to="/"><button type="button" class="btn btn-danger shadow-none signup_button_edit">Sign Up</button></NavLink>
+        <NavLink exact activeClassName="menu_active" className="nav-link" to="/">
+          <button type="button" class="btn btn-danger shadow-none signup_button_edit" data-target="#SignUpMobileLogin" data-toggle="modal">Sign Up</button>
+          <SignUpMobileLogin id="SignUpMobileLogin" />
+          </NavLink>
       </li>
     </ul>
   </div>

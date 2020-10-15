@@ -1,6 +1,11 @@
 import React from 'react'
 import {NavLink} from "react-router-dom"
 import "./Footer.css";
+import "./Pages/Modals/FeedbackModal"
+import FeedbackModal from './Pages/Modals/FeedbackModal';
+import PrivacyPolicy from "./Pages/Modals/PrivacyPolicy";
+import TermsAndConditions from "./Pages/Modals/TermsAndConditions";
+import GetInTouchWithUs from "./Pages/Modals/GetInTouchWithUs";
 
 function Footer() {
  
@@ -28,13 +33,16 @@ function Footer() {
                                <div className="col-6">
                                    <div className="row pb-2">
                                        <div className="col-12">
-                                   <NavLink active className="footer-link pr-4" to="/">{footerText.feedback}</NavLink>
+                                   <NavLink active className="footer-link pr-4" to="/" data-target="#FeedbackModal" data-toggle="modal">{footerText.feedback}</NavLink>
                                    <NavLink active className="footer-link" to="/">{footerText.faq}</NavLink>
+                                   <FeedbackModal id="FeedbackModal" />
+                                   
                                    </div>
                                    </div>
                                    <div className="row pb-3">
                                        <div className="col-12">
-                                       <NavLink active className="footer-link" to="/">{footerText.getInTouch}</NavLink >
+                                       <NavLink active className="footer-link" to="/" data-target="#GetInTouchWithUs" data-toggle="modal">{footerText.getInTouch}</NavLink >
+                                       <GetInTouchWithUs id="GetInTouchWithUs" />
                                    </div>
                                    </div>
                                    <div className="row">
@@ -61,19 +69,21 @@ function Footer() {
                                        <div className="col-12">
                                        <h5 className="right_footer_text">{footerText.subscribeNewsletter}</h5 >
                                        <form className="d-flex">
-                                        <input className="form-control shadow-none mr-2" type="search" placeholder="" aria-label="Search" />
+                                        <input className="form-control shadow-none mr-2 footer_text_box" type="search" placeholder="" aria-label="Search" />
                                         <button type="submit" className="btn btn-warning btn_footer_submit">Submit</button>
                                         </form>
                                    </div>
                                    </div>
                                    <div className="row pb-1">
                                        <div className="col-12">
-                                       <NavLink active className="right_footer_text" to="/">{footerText.privacyPolicy}</NavLink >
+                                       <NavLink active className="right_footer_text" to="/" data-target="#PrivacyPolicy" data-toggle="modal">{footerText.privacyPolicy}</NavLink >
+                                       <PrivacyPolicy id="PrivacyPolicy" />
                                    </div>
                                    </div>
                                    <div className="row pb-3">
                                        <div className="col-12">
-                                       <NavLink active className="right_footer_text" to="/">{footerText.termsConditions}</NavLink >
+                                       <NavLink active className="right_footer_text" to="/" data-target="#TermsAndConditions" data-toggle="modal">{footerText.termsConditions}</NavLink >
+                                       <TermsAndConditions id="TermsAndConditions" />
                                    </div>
                                    </div>
                         </div>

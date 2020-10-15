@@ -15,19 +15,18 @@
 }
 
 .right_footer_text {
-    font-size: small;
+    font-size: x-small;
     text-decoration: none;
     color: #f7aa35;
 }
 
 .right_footer_text:hover {
-    font-size: small;
+    font-size: x-small;
     text-decoration: none;
     color: #ffee00;
 }
 
-
-.form-control {
+.footer_text_box {
 font-size: x-small;
 width: 15vw;
 }

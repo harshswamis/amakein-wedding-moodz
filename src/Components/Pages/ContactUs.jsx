@@ -24,19 +24,29 @@ function Contactus() {
         </div>
         <div className="col-6">
             <div className="row">
-                <div className="col-2"></div>
-                <div className="col-8">
-                
-                        <div className="mb-3">
-                        <label for="exampleFormControlInput1" className="form-label">Email address</label>
-                        <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                <div className="col-1"></div>
+                <div className="col-10 contactus_form">
+                       <div className="my-2">
+                        <label for="exampleFormControlInput1" className="form-label text_label">Name</label>
+                        <input type="text" className="form-control shadow-none text_box" id="exampleFormControlInput1" />
+                        </div>
+                        <div className="mb-2">
+                        <label for="exampleFormControlInput1" className="form-label text_label">Email address</label>
+                        <input type="email" className="form-control shadow-none text_box" id="exampleFormControlInput1" />
+                        </div>
+                        <div className="mb-2">
+                        <label for="exampleFormControlInput1" className="form-label text_label">Phone Number</label>
+                        <input type="tel" className="form-control shadow-none text_box" id="exampleFormControlInput1" />
                         </div>
                         <div className="mb-3">
-                        <label for="exampleFormControlTextarea1" className="form-label">Example textarea</label>
-                        <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="exampleFormControlTextarea1" className="form-label text_label">Message</label>
+                        <textarea className="form-control shadow-none text_area" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div className="mb-3 mr-5 d-flex justify-content-end">
+                        <button type="button" class="btn btn-danger shadow-none contactus_button_edit">Sign Up</button>
                         </div>
                 </div>
-                
+                <div className="col-1"></div>
                 </div>
         </div>
         {/* <div className="col-1"></div> */}

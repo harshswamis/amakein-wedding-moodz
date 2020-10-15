@@ -2,12 +2,40 @@
     background-color: greenyellow;
 }
 
+.text_label {
+    font-size: x-small;
+    color: whitesmoke;
+}
+
 .text_box {
-    font-size: medium;
-    width: 25vw;
-    }
+    font-size: small;
+    width:27vw;
+}
 
 .text_area {
     font-size: small;
-
+    width: 27vw;
+    height: 8vw;
     }
+
+.contactus_form {
+    background-color: #262626;
+}
+
+
+ .contactus_button_edit {
+        border-radius: 50px;
+        padding: 3px 20px;
+        font-size: x-small;
+        background-color: #F0326E;
+        border: none;
+        text-align: center;
+}
+    
+.contactus_button_edit:hover {
+       border-radius: 50px;
+       padding: 3px 20px;
+       font-size: x-small;
+       background-color: #E00047;
+     
+}
