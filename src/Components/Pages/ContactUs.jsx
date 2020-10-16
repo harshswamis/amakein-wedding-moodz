@@ -20,7 +20,7 @@ function Contactus() {
       <div className="row my-5">
         <div className="col-1"></div>   
         <div className="col-5">
-            <p>Our team is always there to help you. Have any doubts or questions for us feel free to drop your query and our team will respond to your query as soon as possible.</p>
+            <p className="contactus_text">Our team is always there to help you. Have any doubts or questions for us feel free to drop your query and our team will respond to your query as soon as possible.</p>
         </div>
         <div className="col-6">
             <div className="row">

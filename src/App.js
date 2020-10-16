@@ -10,6 +10,7 @@ import Home from './Components/Pages/Home';
 import NavBar from "./Components/NavBar";
 import Footer from './Components/Footer';
 import Contactus from './Components/Pages/ContactUs';
+import FAQs from "./Components/Pages/FAQs";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/categories" component={Categories} />
         <Route exact path="/stories" component={Stories} />
         <Route exact path="/contactus" component={ContactUs} />
+        <Route exact path="/faqs" component={FAQs} />
         <Redirect to="/" />
       </Switch>
       <Footer />

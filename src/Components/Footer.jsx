@@ -6,6 +6,7 @@ import FeedbackModal from './Pages/Modals/FeedbackModal';
 import PrivacyPolicy from "./Pages/Modals/PrivacyPolicy";
 import TermsAndConditions from "./Pages/Modals/TermsAndConditions";
 import GetInTouchWithUs from "./Pages/Modals/GetInTouchWithUs";
+import FAQs from "./Pages/FAQs"
 
 function Footer() {
  
@@ -34,7 +35,7 @@ function Footer() {
                                    <div className="row pb-2">
                                        <div className="col-12">
                                    <NavLink active className="footer-link pr-4" to="/" data-target="#FeedbackModal" data-toggle="modal">{footerText.feedback}</NavLink>
-                                   <NavLink active className="footer-link" to="/">{footerText.faq}</NavLink>
+                                   <NavLink active className="footer-link" to="/FAQs">{footerText.faq}</NavLink>
                                    <FeedbackModal id="FeedbackModal" />
                                    
                                    </div>

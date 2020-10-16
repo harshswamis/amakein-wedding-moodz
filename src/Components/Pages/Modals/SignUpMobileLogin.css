@@ -1,0 +1,18 @@
+.mycol {
+    background-color: grey;
+}
+
+.modal-title {
+    font-size: medium;
+}
+
+.modal-content {
+    height: 40vw;
+    width: 40vw;
+    margin: auto;
+}
+
+.modal-header, .modal-footer {
+    border-bottom: 0 none;
+    border-top: 0 none;
+}

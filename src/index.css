@@ -24,7 +24,7 @@ code {
 }
 
 body {
-  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+  background: url('./Components/Images/img-home-background.JPG') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
