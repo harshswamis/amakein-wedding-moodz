@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.wedding_moodz_logo {
+    font-weight: bold;
+    font-size: xx-large;
+    color: whitesmoke;
+}
+
+.FAQs_title {
+      padding: 0em;
+      font-family: 'Playfair Display', serif;
+      color: #F0326E;
+      font-size: 32px;
+      padding-bottom: 15px;
+}
+
+.faq_searchbox {
+    width: 40vw;
+    background-color: whitesmoke;
+    padding: 0.3vw 0.3vw;
+    padding-left: 2vw;
+    border-radius: 40px;
+    border: thick;
+    border-color: teal;
+}
+
+.faq_textbox, .faq_textbox:focus {
+    border: none;
+    background: none;
+}
+
+.faq_searchbutton, .input-group-text, .faq_searchbutton:focus {
+ background: none;
+ border: none;
+ outline: none;
+}
+
+.faq_textbox, .input-group-text:focus {
+    border-width: 0;
+}
+
+.haveaques_form {
+    background-color: #F0326E;
+    border-radius: 8%;
+    height: 22vw;
+    width: 18vw;
+}
+
+.mycol12 {
+    background-color: turquoise;
+}
+
+.faq_text_box, .faq_text_area {
+    width: 14vw;
+    font-size: xx-small;
+}
+
+.faq_text_label {
+    margin-bottom: 0%;
+    font-size: x-small;
+    color: whitesmoke;
+}
+
+.feel_free_to_ask {
+font-size: smaller;
+margin-bottom: -6px;
+font-weight: lighter;
+color: whitesmoke;
+}
+
+.have_a_ques_text {
+font-size: large;
+margin-bottom: 0px;
+margin-top: 14px;
+font-weight: normal;
+color: whitesmoke;
+}
+
+.faqform_button_edit {
+    border-radius: 50px;
+    padding: 3px 20px;
+    font-size: x-small;
+    background-color: #2f1a35;
+    border: none;
+    text-align: center;
+}
+
+.faqform_button_edit:hover {
+   border-radius: 50px;
+   padding: 3px 20px;
+   font-size: x-small;
+   background-color: #410452;
+ 
+}
+
+.post_button_text {
+  color: #f7aa35;
+}
+
+.faq_content_text > h5,h6,li {
+    color:#262626;
+}
+
+
+.faq_socialmedia_icons {
+border-bottom-style: solid;
+border-bottom-color: #F0326E;
+border-bottom-width: 2px;
+padding: 2%;
+}
+
+.faq_link_text > li > a {
+    color: #F0326E;
+}
+
+.faqwmlogo_navbar {
+    width: 120px;
+    height: 80px;
+}
+
+.faq_smlogo {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.faq_smlogo:hover {
+ transform: scale(2);
+ transition: 100ms;
+}

@@ -1,17 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 
 .navbar {
     padding-top: 50px;
     background-color: transparent !important;
   }
-  
-  .navbar-brand {
-  font-size: 1.3rem !important;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 1px;
-  font-weight: bold;
+
+  .navbar_brand_logo {
+  font-size: 1.2rem !important;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 5px;
+  font-weight: 300px;
+  color: whitesmoke;
+  }
+
+  .wmlogo_navbar {
+     width: 15%;
+     height: 15%;
   }
   
   .nav-item {

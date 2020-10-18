@@ -7,6 +7,10 @@ import PrivacyPolicy from "./Pages/Modals/PrivacyPolicy";
 import TermsAndConditions from "./Pages/Modals/TermsAndConditions";
 import GetInTouchWithUs from "./Pages/Modals/GetInTouchWithUs";
 import FAQs from "./Pages/FAQs"
+import FooterWMLogo from "./Images/Logo/logo1@4x_withouttext.png";
+import FooterFacebookLogo from "./Images/Icons _ vectors/facebook@4x.png";
+import FooterInstaLogo from "./Images/Icons _ vectors/instagram@4x.png";
+import FooterWatsappLogo from "./Images/Icons _ vectors/whats app@4x.png";
 
 function Footer() {
  
@@ -58,12 +62,36 @@ function Footer() {
                                    </div>
                                </div>
                                <div className="col-6 text-center d-flex align-items-end pb-3">
-                                  <NavLink active className="footer-link" to="/">{footerText.socialMediaIcons}</NavLink >                                 
+                                  <NavLink active className="footer-link mr-4" to="/">
+                                  <div>
+                                    <img src={FooterWatsappLogo} class="img-responsive footer_smlogo"></img>
+                                  </div>    
+                                  </NavLink >
+                                  <NavLink active className="footer-link mr-4" to="/">
+                                  <div>
+                                    <img src={FooterInstaLogo} class="img-responsive footer_smlogo"></img>
+                                  </div>    
+                                  </NavLink >  
+                                  <NavLink active className="footer-link mr-4" to="/">
+                                  <div>
+                                    <img src={FooterFacebookLogo} class="img-responsive footer_smlogo"></img>
+                                  </div>    
+                                  </NavLink >  
                                </div>
                            </div>
                         </div>
-                        <div className="col-4 d-flex text-center align-items-end mycol_1">
-                            <h4>{footerText.weddingMoodzLogo}</h4>
+                        <div className="col-4 d-flex text-center align-items-end">
+                        <div className="row">
+                            <div className="col-12">
+                            <div>
+                            <img src={FooterWMLogo} class="img-responsive footer_wmlogo"></img>
+                            </div>
+                            <span className="footer_brand_logo_text">WEDDINGMOODZ</span><br />
+                            </div>
+                            <div className="col-12">
+                            <p className="footer_allrightsreserved_Text text-center">all rights reserved</p>
+                            </div>
+                        </div>
                         </div>
                         <div className="col-4">
                         <div className="row pb-3">

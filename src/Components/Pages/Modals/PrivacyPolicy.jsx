@@ -1,4 +1,5 @@
 import React from 'react'
+import WMLogo from "../../Images/Logo/Main Logo.png";
 
 function PrivacyPolicy(props) {
     return (
@@ -12,13 +13,17 @@ function PrivacyPolicy(props) {
                             <div className="row">
                             <div className="col-12 d-flex flex-column">
                             <div className="row">
-                                <div className="col-12 d-flex justify-content-end my-1">
+                                <div className="col-12 d-flex justify-content-end">
                                 <button type="button" className="btn-close" data-dismiss="modal" aria-label="Close"></button>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-12 d-flex justify-content-center mb-0">
-                                <h5 className="modal_logo">Wedding Moodz Logo</h5>
+                                <div className="col-12 d-flex justify-content-center mb-0">
+                                <div>
+                                <img src={WMLogo} class="img-responsive wmlogo_tandc"></img>
+                                </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +58,7 @@ function PrivacyPolicy(props) {
                             <div className="col-12">
                             <div className="row">
                                 <div className="col-12 ">
-                                <div className="row mb-4">
+                                <div className="row">
                                 <div className="col-12 d-flex justify-content-center align-items-center">
                                 <div className="mr-1">
                                 <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckChecked" />
@@ -62,13 +67,14 @@ function PrivacyPolicy(props) {
                                   I've read and I hereby accept the privacy policy
                                 </label>
                                 </div>
+                                </div>
                                 <div className="row mt-1 mb-2">
                                     <div className="col-12 d-flex justify-content-center">
                                 <button type="button" class="btn btn-danger shadow-none contactus_button_edit">Submit</button>
                                 </div>
                                 </div>
                                 </div>
-                                </div>
+                                
                             </div>
                             </div>
                             </div>

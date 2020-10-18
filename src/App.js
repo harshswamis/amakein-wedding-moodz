@@ -1,7 +1,7 @@
 import React from 'react';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
-import './App.css';
+import "./App.css";
 import {Switch, Route, Redirect} from "react-router-dom";
 import Categories from './Components/Pages/Categories';
 import Stories from './Components/Pages/Stories';

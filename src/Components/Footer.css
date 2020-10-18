@@ -35,3 +35,31 @@ width: 15vw;
     font-size: x-small;
     width: 5vw;
     }
+
+.footer_brand_logo_text {
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 4px;
+    font-weight: 300px;
+    color: whitesmoke;
+    font-size: smaller;
+}
+
+.footer_wmlogo {
+    width: 15%;
+    height: 15%;
+ }
+
+.footer_allrightsreserved_Text {
+   color: #f7aa35;
+   font-size: 8px;
+}
+
+.footer_smlogo {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.footer_smlogo:hover {
+    transform: scale(1.5);
+    transition: 100ms;
+   }

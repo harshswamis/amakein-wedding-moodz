@@ -1,5 +1,6 @@
 import React from 'react'
 import "./SignUpMobileLogin.css"
+import WMLogo from "../../Images/Logo/Main Logo.png";
 
 function SignUpMobileLogin(props) {
     return (
@@ -13,18 +14,20 @@ function SignUpMobileLogin(props) {
                             <div className="row">
                             <div className="col-12 d-flex flex-column">
                             <div className="row">
-                                <div className="col-12 d-flex justify-content-end my-3">
+                                <div className="col-12 d-flex justify-content-end my-1">
                                 <button type="button" className="btn-close" data-dismiss="modal" aria-label="Close"></button>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-12 d-flex justify-content-center mb-2">
-                                <h5 className="modal_logo">Wedding Moodz Logo</h5>
+                                <div className="col-12 d-flex justify-content-center mb-4">
+                                <div>
+                                <img src={WMLogo} class="img-responsive wmlogo_tandc"></img>
                                 </div>
+                                </div>       
                             </div>
                             <div className="row">
                                 <div className="col-12 d-flex justify-content-center mb-2">
-                                <h5 className="modal-title">Sign Up/Sign In</h5>
+                                <h5 className="modal-title"><strong>Sign Up/Sign In</strong></h5>
                                 </div>
                             </div>
                         </div>

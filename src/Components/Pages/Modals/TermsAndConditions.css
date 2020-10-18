@@ -1,0 +1,53 @@
+.termsConditions_text {
+    height: 22vw;
+    overflow-x: hidden;
+    overflow-y: initial;
+    font-weight: bold;
+    /* background-color: hotpink; */
+}
+
+.termsConditions_text::-webkit-scrollbar{
+    width: 8px;
+  }
+  
+  .termsConditions_text::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey;  */
+    border-radius: 25px;
+    background-color: rgba(192,192,192, 0.1);
+  }
+   
+  /* Handle */
+  .termsConditions_text::-webkit-scrollbar-thumb {
+    background: #802c6e; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .termsConditions_text::-webkit-scrollbar-thumb:hover {
+    background: #2f1a35; 
+  }
+  
+
+.tandc_body {
+    background-color: rgb(245, 238, 238);
+    margin: 1vw 1vw;
+    border-radius: 5%;
+}
+
+.form-check-label {
+    font-size: small;
+    font-weight: bold;
+}
+
+.mycolcheck {
+    background-color: lightblue;
+}
+
+.myccol {
+  background-color: tomato;
+}
+
+.wmlogo_tandc {
+  width: 6vw;
+  height: 4vw;
+}

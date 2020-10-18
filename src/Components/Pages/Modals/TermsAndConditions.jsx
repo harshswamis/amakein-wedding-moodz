@@ -1,5 +1,6 @@
 import React from 'react'
 import "./TermsAndConditions.css";
+import WMLogo from "../../Images/Logo/Main Logo.png";
 
 function TermsAndConditions(props) {
     return (
@@ -13,13 +14,15 @@ function TermsAndConditions(props) {
                             <div className="row">
                             <div className="col-12 d-flex flex-column">
                             <div className="row">
-                                <div className="col-12 d-flex justify-content-end my-1">
+                                <div className="col-12 d-flex justify-content-end">
                                 <button type="button" className="btn-close" data-dismiss="modal" aria-label="Close"></button>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-12 d-flex justify-content-center mb-0">
-                                <h5 className="modal_logo">Wedding Moodz Logo</h5>
+                                <div>
+                                <img src={WMLogo} class="img-responsive wmlogo_tandc"></img>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +66,7 @@ function TermsAndConditions(props) {
                             <div className="col-12">
                             <div className="row">
                                 <div className="col-12 ">
-                                <div className="row mb-4">
+                                <div className="row">
                                 <div className="col-12 d-flex justify-content-center align-items-center">
                                 <div className="mr-1">
                                 <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckChecked" />
@@ -72,10 +75,11 @@ function TermsAndConditions(props) {
                                   I've read and I hereby accept the terms & conditions
                                 </label>
                                 </div>
+                                </div>
                                 <div className="row mt-1 mb-2">
                                     <div className="col-12 d-flex justify-content-center">
                                 <button type="button" class="btn btn-danger shadow-none contactus_button_edit">Submit</button>
-                                </div>
+                                
                                 </div>
                                 </div>
                                 </div>

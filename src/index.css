@@ -24,7 +24,8 @@ code {
 }
 
 body {
-  background: url('./Components/Images/img-home-background.JPG') no-repeat center center fixed;
+  background: no-repeat center center fixed;
+  background-color: silver;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
