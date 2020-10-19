@@ -27,12 +27,14 @@ margin-top: 320px;
   .search_row {
     background-color: whitesmoke;
     border-radius: 6px;
+    margin-right: 10%;
+    margin-left: 10%;
   }
 
   .homepage_searchbox {
-    width: 28vw;
+    width: 24vw;
     background-color: rgb(236, 231, 231);
-    padding: 0.1vw 0.8vw;
+    padding: 0vw 0.8vw;
     border: thick;
     border-color: teal;
     border-right-style: solid;
@@ -64,7 +66,7 @@ margin-top: 320px;
 }
 
 .get_started_button {
-  padding: 2px 25px;
+  padding: 2px 12px;
   font-size: small;
   background-color: #e48900;
   border-color: #e48900;
@@ -72,7 +74,7 @@ margin-top: 320px;
 }
 
 .get_started_button:hover {
- padding: 2px 25px;
+ padding: 2px 12px;
  font-size: small;
  background-color: #e48900;
  border-color: #e48900;

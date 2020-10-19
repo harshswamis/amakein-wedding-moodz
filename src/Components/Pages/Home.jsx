@@ -27,9 +27,9 @@ function Home() {
 </section>
 <section>
   <div className="container-fluid">
-    <div className="row search_row mx-5 mb-5">
+    <div className="row search_row mb-5">
       <div className="col-1"></div>
-      <div className="col-10 searchbox_row">
+      <div className="col-10">
           <div className="row my-2">
             <div className="col-5">
                 <div className="d-flex align-items-center homepage_searchbox">
