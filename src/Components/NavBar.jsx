@@ -11,11 +11,11 @@ function NavBar() {
 <section>
 <div className="container-fluid nav_bg">
     <div className="row">
-      <div className="col-1"></div>
+      {/* <div className="col-1"></div> */}
        <div className="col-10 mx-auto">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-              <div className="row">
-                <div className="col-6">
+              <div className="row d-flex justify-content-between">
+                <div className="col-sm-11 col-lg-6">
               <NavLink className="navbar-brand" to="/home">
                 <div>
                 <img src={WMLogo} class="img-responsive wmlogo_navbar"></img>
@@ -23,7 +23,7 @@ function NavBar() {
                 </div>
               </NavLink>
               </div>
-              <div className="col-6">
+              <div className="col-sm-1 col-lg-6">
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
@@ -56,7 +56,7 @@ function NavBar() {
             </nav>
          <div data-spy="scroll" data-target="#navbar-example3" data-offset="0" tabindex="0"></div>
        </div>
-<div className="col-1"></div>
+{/* <div className="col-1"></div> */}
          </div>
     </div>
 </section>

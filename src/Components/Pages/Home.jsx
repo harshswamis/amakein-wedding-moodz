@@ -28,13 +28,12 @@ function Home() {
 <section>
   <div className="container-fluid">
     <div className="row search_row mb-5">
-      <div className="col-1"></div>
-      <div className="col-10">
+      <div className="col-12 mx-auto">
           <div className="row my-2">
             <div className="col-5">
-                <div className="d-flex align-items-center homepage_searchbox">
-                <div className="input-group-append mtcol">   
-                <img src={VendorSearchBoxIcon} className="img-responsive vendor_searchbox_icon" />
+                <div className=" homepage_searchbox d-flex align-items-center">
+                 <div className="input-group-append mtcol">   
+                   <img src={VendorSearchBoxIcon} className="img-responsive vendor_searchbox_icon" />
                 </div>
                     <input className="form-control homepage_textbox shadow-none" type="text" placeholder="Type vendor category..." aria-label="Search" />      
                 </div>
@@ -45,12 +44,13 @@ function Home() {
                 <img src={CitySearchBoxIcon} className="img-responsive city_searchbox_icon" />
                 </div>
                     <input className="form-control homepage_textbox shadow-none" type="text" placeholder="type your preferred city..." aria-label="Search" />      
-                </div> 
+                </div>
             </div>
-              <button type="button" className=" col-2 btn btn-danger shadow-none get_started_button d-flex justify-content-center align-items-center"><span className="getStarted_text">Get Started</span></button>
+            <div className="col-2">
+              <button type="button" className="btn btn-danger shadow-none get_started_button d-flex justify-content-center align-items-center"><span className="getStarted_text">Get Started</span></button>
+            </div>
           </div>
       </div>
-      <div className="col-1"></div>
     </div>
   </div>
 </section>

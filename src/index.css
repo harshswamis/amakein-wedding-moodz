@@ -37,21 +37,31 @@ body {
 // No media query since this is the default in Bootstrap */
 
 /* // Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px){ 
-     
+@media (min-width: 576px){ 
+     body {
+       background-color: red;
+     }
 }
 
 /* // Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) { 
-     
+ @media (min-width: 768px) { 
+     body {background-color: yellow;
+      
+ }
 }
 
 /* // Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) { 
-     
-} */
+ @media (min-width: 992px) { 
+     body {
+       background-color: greenyellow;
+      
+     }
+} 
 
 /* // Extra large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) { 
+ @media (min-width: 1200px) { 
+   body {
+     background-color: orange;
+   }
     
-}  */ 
+}
