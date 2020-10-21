@@ -28,12 +28,13 @@
 
 .footer_text_box {
 font-size: x-small;
-width: 15vw;
+width: 18vw;
 }
 
 .btn_footer_submit {
-    font-size: x-small;
-    width: 5vw;
+    font-size: 0.8vw;
+    width: 8vw;
+    text-align: center;
     }
 
 .footer_brand_logo_text {
@@ -55,8 +56,8 @@ width: 15vw;
 }
 
 .footer_smlogo {
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 2vw;
+    height: 2vw;
 }
 
 .footer_smlogo:hover {

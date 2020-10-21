@@ -20,8 +20,8 @@ function Stories() {
   <section>
      <div className="container-fluid">
         <div className="row">
-            <div className="col-sm-1 my-5"></div>
-            <div className="col-sm-10 my-5">
+            {/* <div className="col-sm-1 my-5"></div> */}
+            <div className="col-sm-10 my-5 mx-auto">
                 <div id="stories_cards_carousel"className="carousel slide" data-ride="carousel" data-interval="false">
                      <div className="carousel-inner">
                          <div className="carousel-item active">
@@ -108,7 +108,7 @@ function Stories() {
                     </a>
                 </div>
             </div>  
-            <div className="col-sm-1 my-5"></div>  
+            {/* <div className="col-sm-1 my-5"></div>   */}
         </div>    
      </div>            
   </section> 
