@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/amakein-wedding-moodz/static/css/main.a517b564.chunk.css",
-    "main.js": "/amakein-wedding-moodz/static/js/main.f7f23fcf.chunk.js",
-    "main.js.map": "/amakein-wedding-moodz/static/js/main.f7f23fcf.chunk.js.map",
+    "main.css": "/amakein-wedding-moodz/static/css/main.ad740543.chunk.css",
+    "main.js": "/amakein-wedding-moodz/static/js/main.0f27a90c.chunk.js",
+    "main.js.map": "/amakein-wedding-moodz/static/js/main.0f27a90c.chunk.js.map",
     "runtime-main.js": "/amakein-wedding-moodz/static/js/runtime-main.0e0d624c.js",
     "runtime-main.js.map": "/amakein-wedding-moodz/static/js/runtime-main.0e0d624c.js.map",
     "static/css/2.974c742c.chunk.css": "/amakein-wedding-moodz/static/css/2.974c742c.chunk.css",
-    "static/js/2.e002ea5f.chunk.js": "/amakein-wedding-moodz/static/js/2.e002ea5f.chunk.js",
-    "static/js/2.e002ea5f.chunk.js.map": "/amakein-wedding-moodz/static/js/2.e002ea5f.chunk.js.map",
+    "static/js/2.ca1fc0a3.chunk.js": "/amakein-wedding-moodz/static/js/2.ca1fc0a3.chunk.js",
+    "static/js/2.ca1fc0a3.chunk.js.map": "/amakein-wedding-moodz/static/js/2.ca1fc0a3.chunk.js.map",
     "index.html": "/amakein-wedding-moodz/index.html",
-    "precache-manifest.235831266d776b3bc840f6be718f7277.js": "/amakein-wedding-moodz/precache-manifest.235831266d776b3bc840f6be718f7277.js",
+    "precache-manifest.6f965c4ea20f97987c0a59627c38090f.js": "/amakein-wedding-moodz/precache-manifest.6f965c4ea20f97987c0a59627c38090f.js",
     "service-worker.js": "/amakein-wedding-moodz/service-worker.js",
     "static/css/2.974c742c.chunk.css.map": "/amakein-wedding-moodz/static/css/2.974c742c.chunk.css.map",
-    "static/css/main.a517b564.chunk.css.map": "/amakein-wedding-moodz/static/css/main.a517b564.chunk.css.map",
-    "static/js/2.e002ea5f.chunk.js.LICENSE.txt": "/amakein-wedding-moodz/static/js/2.e002ea5f.chunk.js.LICENSE.txt",
+    "static/css/main.ad740543.chunk.css.map": "/amakein-wedding-moodz/static/css/main.ad740543.chunk.css.map",
+    "static/js/2.ca1fc0a3.chunk.js.LICENSE.txt": "/amakein-wedding-moodz/static/js/2.ca1fc0a3.chunk.js.LICENSE.txt",
     "static/media/Main Logo.png": "/amakein-wedding-moodz/static/media/Main Logo.23400cf3.png",
     "static/media/img-1.jpg": "/amakein-wedding-moodz/static/media/img-1.ffb198be.jpg",
     "static/media/img-home-background.JPG": "/amakein-wedding-moodz/static/media/img-home-background.cbad43ab.JPG",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.0e0d624c.js",
     "static/css/2.974c742c.chunk.css",
-    "static/js/2.e002ea5f.chunk.js",
-    "static/css/main.a517b564.chunk.css",
-    "static/js/main.f7f23fcf.chunk.js"
+    "static/js/2.ca1fc0a3.chunk.js",
+    "static/css/main.ad740543.chunk.css",
+    "static/js/main.0f27a90c.chunk.js"
   ]
 }
