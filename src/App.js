@@ -9,24 +9,58 @@ import ContactUs from './Components/Pages/ContactUs';
 import Home from './Components/Pages/Home';
 import NavBar from "./Components/NavBar";
 import Footer from './Components/Footer';
-import Contactus from './Components/Pages/ContactUs';
 import FAQs from "./Components/Pages/FAQs";
 
-function App() {
+import HomeBackground from "./Components/Images/background-1.jpg"
+
+class App extends React.Component {
+
+  constructor() {
+    super()
+    this.state = {
+      backgroundImage : ``,
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      homePath : "/",
+      categoriesPath : "/categories",
+      storiesPath : "/stories",
+      contactUsPath : "/contactus",
+    }
+
+    this.handleClick = this.handleClick.bind(this);
+
+  }
+
+  handleClick = image => {
+        this.setState({backgroundImage : image})
+  }
+
+  componentDidMount() {
+    //  document.body.style.backgroundColor = this.state.backgroundColor;
+  }
+
+render() {
+
+  const mystyle = {
+    backgroundColor: "DodgerBlue",
+  };
+
   return (
-    <div className="App">
-      <NavBar />
+    <div className="App" style={this.state}>
+      <NavBar path={this.state} handleClick={this.handleClick}/>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/categories" component={Categories} />
-        <Route exact path="/stories" component={Stories} />
-        <Route exact path="/contactus" component={ContactUs} />
+        <Route exact path={this.state.homePath} component={Home} />
+        <Route exact path={this.state.categoriesPath} component={Categories} />
+        <Route exact path={this.state.storiesPath} component={Stories} />
+        <Route exact path={this.state.contactUsPath} component={ContactUs} />
         <Route exact path="/faqs" component={FAQs} />
         <Redirect to="/" />
       </Switch>
       <Footer />
     </div>
-  );
+  )
+}
 }
 
 export default App;

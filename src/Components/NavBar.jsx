@@ -5,7 +5,13 @@ import "./Pages/Modals/SignUpMobileLogin"
 import SignUpMobileLogin from './Pages/Modals/SignUpMobileLogin';
 import WMLogo from "./Images/Logo/logo1@4x_withouttext.png";
 
-function NavBar() {
+import HomeBackground from "./Images/background-1.jpg";
+import CategoriesBackground from "./Images/background-2.jpg";
+import StoriesBackground from "./Images/background-3.jpg";
+import ContactUsBackground from "./Images/background-4.jpg";
+
+
+function NavBar(props) {
     return (
 <>
 <section>
@@ -31,17 +37,17 @@ function NavBar() {
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                   <li className="nav-item active">
-                    <NavLink exact activeClassName="menu_active active" className="nav-link" to="/home">
+                    <NavLink exact activeClassName="menu_active active" className="nav-link" to="/" onClick={() => {props.handleClick(`url(${HomeBackground})`)}}>
                       <span className="nav_menu_text">Home</span></NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink exact activeClassName="menu_active" className="nav-link" to="/categories"><span className="nav_menu_text">Categories</span></NavLink>
+                    <NavLink exact activeClassName="menu_active" className="nav-link" to="/categories" onClick={() => {props.handleClick(`url(${CategoriesBackground})`)}}><span className="nav_menu_text">Categories</span></NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink exact activeClassName="menu_active" className="nav-link" to="/stories"><span className="nav_menu_text">Stories</span></NavLink>
+                    <NavLink exact activeClassName="menu_active" className="nav-link" to="/stories" onClick={() => {props.handleClick(`url(${StoriesBackground})`)}}><span className="nav_menu_text">Stories</span></NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink exact activeClassName="menu_active" className="nav-link" to="/contactus"><span className="nav_menu_text">Contact Us</span></NavLink>
+                    <NavLink exact activeClassName="menu_active" className="nav-link" to="/contactus" onClick={() => {props.handleClick(`url(${ContactUsBackground})`)}}><span className="nav_menu_text">Contact Us</span></NavLink>
                   </li>
                   <li className="nav-item">
                     <NavLink exact activeClassName="menu_active" className="nav-link" to="/">
