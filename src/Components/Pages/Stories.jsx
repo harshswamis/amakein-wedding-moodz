@@ -9,11 +9,11 @@ function Stories() {
 <section>
     <div className="container-fluid">
         <div className="row">
-            <div className="col-5"></div>
-            <div className="col-2">
+            {/* <div className="col-5"></div> */}
+            <div className="col-md-2 mx-auto">
                 <h1 className="text-center stories_text">Stories</h1>
             </div>
-            <div className="col-5"></div>
+            {/* <div className="col-5"></div> */}
         </div>
     </div>
 </section>
@@ -27,7 +27,7 @@ function Stories() {
                          <div className="carousel-item active">
                                <div className="container">
                                    <div className="row">
-                                     <div className="col-sm-4 col-lg-4">
+                                     <div className="col-4">
                                        <div className="card stories_card">
                                             <img src={Web} className="card-img-top stories_card_image" alt="image-1" />
                                             <div className="card-body stories_card_bodies">
@@ -37,7 +37,7 @@ function Stories() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-sm-4 col-lg-4">
+                                    <div className="col-4">
                                        <div className="card stories_card">
                                             <img src={Web} className="card-img-top stories_card_image" alt="image-1" />
                                             <div className="card-body stories_card_bodies">
@@ -47,7 +47,7 @@ function Stories() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-sm-4 col-lg-4">
+                                    <div className="col-4">
                                        <div className="card stories_card">
                                             <img src={Web} className="card-img-top stories_card_image" alt="image-1" />
                                             <div className="card-body stories_card_bodies">
@@ -64,7 +64,7 @@ function Stories() {
                          <div className="carousel-item">
                                <div className="container">
                                    <div className="row">
-                                   <div className="col-sm-4 col-lg-4">
+                                   <div className="col-4">
                                        <div className="card stories_card">
                                             <img src={Web} className="card-img-top stories_card_image" alt="image-1" />
                                             <div className="card-body stories_card_bodies">
@@ -74,7 +74,7 @@ function Stories() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-sm-4 col-lg-4">
+                                    <div className="col-4">
                                        <div className="card stories_card">
                                             <img src={Web} className="card-img-top stories_card_image" alt="image-1" />
                                             <div className="card-body stories_card_bodies">
@@ -84,7 +84,7 @@ function Stories() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-sm-4 col-lg-4">
+                                    <div className="col-4">
                                        <div className="card stories_card">
                                             <img src={Web} className="card-img-top stories_card_image" alt="image-1" />
                                             <div className="card-body stories_card_bodies">

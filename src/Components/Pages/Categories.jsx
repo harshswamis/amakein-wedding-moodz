@@ -9,7 +9,7 @@ function Categories() {
 <div className="container-fluid">
     <div className="row my-3 align-items-center">
         <div className="col-md-5"></div>
-        <div className="col-md-2">
+        <div className="col-md-2 mx-auto">
             <h1 className="text-center categories_text">Categories</h1>
         </div>
         <div className="col-md-5 text-center">

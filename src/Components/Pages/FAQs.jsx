@@ -18,13 +18,13 @@ function FAQs() {
                         <div className="col-12 d-flex justify-content-center">
                              <img src={FAQWMLogo} class="img-responsive faqwmlogo_navbar"></img>
                         </div>
-                    </div>
-                    <div className="row mt-4">
-                        <div className="col-12 d-flex justify-content-center">
+                    {/* </div> */}
+                    {/* <div className="row "> */}
+                        <div className="col-12 mt-4 d-flex justify-content-center">
                         <h1 className="text-center FAQs_title">FAQ's</h1>
                         </div>
-                    </div>
-                    <div className="row">
+                    {/* </div> */}
+                    {/* <div className="row"> */}
                         <div className="col-12 d-flex justify-content-center inline-block">
                         <div className="d-flex inline-block align-items-center faq_searchbox">
                         <input className="form-control faq_textbox shadow-none" type="text" placeholder="search any question..." aria-label="Search" />
@@ -36,15 +36,15 @@ function FAQs() {
                         </div>       
                         </div>
                         </div>
-            </section>
-            <section>
+            </section> 
+             <section>
                 <div className="container-fluid">
                     <div className="row mt-5">
                         {/* <div className="col-2"></div> */}
-                        <div className="col-8">
+                        <div className="col-12 col-sm-8">
                             <div className="row mt-4">
-                                <div className="col-3"></div>
-                                <div className="col-9">
+                                <div className="col-12 col-sm-3"></div>
+                                <div className="col-12 col-sm-9">
                                     <p className="faq_content_text">
                                         <h5>Frequently Asked Questions</h5>
                                         <h6>Returns</h6>
@@ -62,7 +62,7 @@ function FAQs() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-4 d-flex align-items-center justify-content-center">
+                        <div className="col-12 col-sm-4 d-flex align-items-center justify-content-center">
                             <div className="row">
                                 <div className="col-12 haveaques_form my-4 mx-4">
                         <div className="mt-2 mx-3">
@@ -92,9 +92,10 @@ function FAQs() {
                 </div>
             </section>
             <section>
+              <div className="container-fluid">
                 <div className="row my-5">
-                    <div className="col-4"></div>
-                    <div className="col-4 d-flex justify-content-center faq_socialmedia_icons">
+                    {/* <div className="col-4"></div> */}
+                    <div className="col-10 col-sm-4 mx-auto d-flex justify-content-center faq_socialmedia_icons">
                                 <NavLink active className="footer-link mr-4" to="/">
                                   <div>
                                     <img src={FAQPhoneLogo} class="img-responsive faq_smlogo" />
@@ -121,7 +122,8 @@ function FAQs() {
                                   </div>    
                                 </NavLink >
                     </div>
-                    <div className="col-4"></div>
+                    {/* <div className="col-4"></div> */}
+                </div>
                 </div>
             </section>
                         </>

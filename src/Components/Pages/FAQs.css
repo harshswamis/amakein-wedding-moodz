@@ -17,7 +17,7 @@
 }
 
 .faq_searchbox {
-    width: 40vw;
+    width: 600px;
     background-color: whitesmoke;
     padding: 0.3vw 0.3vw;
     padding-left: 2vw;
@@ -29,6 +29,7 @@
 .faq_textbox, .faq_textbox:focus {
     border: none;
     background: none;
+    font-size: small;
 }
 
 .faq_searchbutton, .input-group-text, .faq_searchbutton:focus {
@@ -44,8 +45,8 @@
 .haveaques_form {
     background-color: #F0326E;
     border-radius: 8%;
-    height: 22vw;
-    width: 18vw;
+    height: 305px;
+    width: 245px;
 }
 
 .mycol12 {
@@ -53,7 +54,7 @@
 }
 
 .faq_text_box, .faq_text_area {
-    width: 14vw;
+    width: 188px;
     font-size: xx-small;
 }
 
@@ -121,8 +122,8 @@ padding: 2%;
 }
 
 .faq_smlogo {
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 40px;
+    height: 40px;
 }
 
 .faq_smlogo:hover {

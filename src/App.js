@@ -37,7 +37,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    //  document.body.style.backgroundColor = this.state.backgroundColor;
+    this.setState({backgroundImage : `url(${HomeBackground})`})
   }
 
 render() {

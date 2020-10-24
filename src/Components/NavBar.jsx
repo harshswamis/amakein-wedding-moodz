@@ -18,7 +18,7 @@ function NavBar(props) {
 <div className="container-fluid nav_bg">
     <div className="row">
       {/* <div className="col-1"></div> */}
-       <div className="col-10 mx-auto">
+       <div className="col-10 mx-auto mycol22">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
               <div className="row d-flex justify-content-between">
                 <div className="col-sm-11 col-lg-6">
@@ -37,17 +37,17 @@ function NavBar(props) {
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                   <li className="nav-item active">
-                    <NavLink exact activeClassName="menu_active active" className="nav-link" to="/" onClick={() => {props.handleClick(`url(${HomeBackground})`)}}>
-                      <span className="nav_menu_text">Home</span></NavLink>
+                    <NavLink exact activeClassName="menu_active active" className="nav-link" to="/">
+                      <span className="nav_menu_text" onClick={() => {props.handleClick(`url(${HomeBackground})`)}}>Home</span></NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink exact activeClassName="menu_active" className="nav-link" to="/categories" onClick={() => {props.handleClick(`url(${CategoriesBackground})`)}}><span className="nav_menu_text">Categories</span></NavLink>
+                    <NavLink exact activeClassName="menu_active" className="nav-link" to="/categories"><span className="nav_menu_text" onClick={() => {props.handleClick(`url(${CategoriesBackground})`)}}>Categories</span></NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink exact activeClassName="menu_active" className="nav-link" to="/stories" onClick={() => {props.handleClick(`url(${StoriesBackground})`)}}><span className="nav_menu_text">Stories</span></NavLink>
+                    <NavLink exact activeClassName="menu_active" className="nav-link" to="/stories"><span className="nav_menu_text" onClick={() => {props.handleClick(`url(${StoriesBackground})`)}}>Stories</span></NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink exact activeClassName="menu_active" className="nav-link" to="/contactus" onClick={() => {props.handleClick(`url(${ContactUsBackground})`)}}><span className="nav_menu_text">Contact Us</span></NavLink>
+                    <NavLink exact activeClassName="menu_active" className="nav-link" to="/contactus" ><span className="nav_menu_text" onClick={() => {props.handleClick(`url(${ContactUsBackground})`)}}>Contact Us</span></NavLink>
                   </li>
                   <li className="nav-item">
                     <NavLink exact activeClassName="menu_active" className="nav-link" to="/">

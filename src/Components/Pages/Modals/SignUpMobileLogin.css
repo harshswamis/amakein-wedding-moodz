@@ -7,9 +7,10 @@
 }
 
 .modal-content {
-    height: 40vw;
-    width: 40vw;
-    margin: auto;
+    height: 550px;
+    width: 500px;
+    margin:auto;
+    border-radius: 0%;
 }
 
 .modal-header, .modal-footer {

@@ -23,6 +23,10 @@ code {
     font-family: 'Mulish', sans-serif;
 }
 
+html, body {
+  overflow-x : hidden;
+}
+
 /* body {
   background: no-repeat center center fixed;
   background-color: silver;

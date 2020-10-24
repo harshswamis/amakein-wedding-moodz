@@ -14,6 +14,8 @@
   letter-spacing: 5px;
   font-weight: 300px;
   color: whitesmoke;
+  top:50%;
+  bottom:50%;
   }
 
   .wmlogo_navbar {
@@ -26,6 +28,8 @@
     font-weight: bold;
     padding-right: 30px;
     text-decoration: none;
+    top:50%;
+    bottom:50%;
   }
   .nav_menu_text {
     color: whitesmoke;

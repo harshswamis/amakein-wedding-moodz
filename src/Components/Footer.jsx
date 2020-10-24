@@ -35,25 +35,26 @@ function Footer() {
         <div className="container-fluid">
             <div className="row my-col">
                 <div className="col-xs-12 col-sm-4">
-                    <div className="row ml-5 my-3">
-                        <div className="col-6 col-sm-12 ">
-                        <NavLink active className="footer-link pr-4" to="/" data-target="#FeedbackModal" data-toggle="modal">{footerText.feedback}</NavLink>
-                        <NavLink active className="footer-link" to="/FAQs">{footerText.faq}</NavLink>
-                        <FeedbackModal id="FeedbackModal" />
-                        </div>
-                        <div className="col-6 col-sm-12 mt-3">
+                    <div className="row ml-3 my-3">
+                        <div className="col-12 col-sm-12 mb-4">
+                        <NavLink active className="footer-link mr-4" to="/" data-target="#FeedbackModal" data-toggle="modal">{footerText.feedback}</NavLink>
+                        <NavLink active className="footer-link mr-4" to="/FAQs">{footerText.faq}</NavLink>
                         <NavLink active className="footer-link" to="/" data-target="#GetInTouchWithUs" data-toggle="modal">{footerText.getInTouch}</NavLink >
+                        <FeedbackModal id="FeedbackModal" />
                         <GetInTouchWithUs id="GetInTouchWithUs" />
                         </div>
-                        <div className="col-sm-12 mt-3 d-flex align-items-center">
-                        <img src={FooterPhoneLogo} class="img-responsive footer_smlogo mr-3"></img>
+                        {/* <div className="col-6 col-sm-12">
+                        
+                        </div> */}
+                        <div className="col-4 col-sm-12 d-flex align-items-center">
+                        <img src={FooterPhoneLogo} class="img-responsive footer_smlogo mr-2"></img>
                         <p className="footer-link pt-3">{footerText.phoneNo}</p>
                         </div>
-                        <div className="col-6 col-sm-12 col-md-6 d-flex align-items-center">
-                        <img src={FooterEmailLogo} class="img-responsive footer_smlogo mr-3"></img>
+                        <div className="col-4 col-sm-12 col-lg-6 d-flex align-items-center">
+                        <img src={FooterEmailLogo} class="img-responsive footer_smlogo mr-2"></img>
                         <p className="footer-link pt-3">{footerText.emailAddress}</p> 
                         </div>
-                        <div className="col-6 col-sm-12 col-md-6 d-flex align-items-end pl-5 mb-3">
+                        <div className="col-4 col-sm-12 col-lg-6 d-flex align-items-end pl-3 mb-3">
                         <NavLink active className="footer-link footer_sm_logos mr-4" to="/">
                                   <div>
                                     <img src={FooterWatsappLogo} class="img-responsive footer_smlogo"></img>
@@ -72,21 +73,21 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="col-xs-12 col-sm-4 d-flex align-items-end mb-1">
+                <div className="col-sm-4 d-flex align-items-end mb-1">
                 <div className="row">         
-                <div className="col-12 text-center">
+                <div className="d-none d-sm-block col-sm-12 text-center">
                     <div>
                       <img src={FooterWMLogo} class="img-responsive footer_wmlogo"></img>
                     </div>
                       <span className="footer_brand_logo_text">WEDDINGMOODZ</span><br />
                     </div>
-                    <div className="col-12">
+                    <div className="d-none d-sm-block col-sm-12">
                       <p className="footer_allrightsreserved_Text text-center">all rights reserved</p>
                     </div>
                 </div>
                 </div>
             <div className="col-12 col-sm-4">
-                <div className="row pt-4">
+                <div className="row pt-4 ">
                                     <div className="col-6 col-sm-12 mb-4">
                                        <h5 className="right_footer_text">{footerText.subscribeNewsletter}</h5 >
                                        <form className="d-flex">
