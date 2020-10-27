@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/amakein-wedding-moodz/precache-manifest.3f5f905ab9fe7f40d289988e13e70c56.js"
+  "/amakein-wedding-moodz/precache-manifest.5c41b2d50da583ce13900551b97bfdbb.js"
 );
 
 self.addEventListener('message', (event) => {
