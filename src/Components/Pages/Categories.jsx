@@ -2,9 +2,28 @@ import React from 'react'
 import Web from "../Images/img-1.jpg";
 import "../Pages/Categories.css";
 
-function Categories() {
+import CategoriesBackground from "../Images/background-common.jpg";
+
+class Categories extends React.Component {
+
+   constructor() {
+       super()
+       this.state = {
+       }
+   }
+
+   componentDidMount ()
+   {
+     document.body.style.backgroundImage = `url(${CategoriesBackground})`;
+     document.body.style.backgroundPosition = "center";
+     document.body.style.backgroundRepeat = "no-repeat";
+     document.body.style.backgroundSize = "cover";   
+   }
+
+   render () {
     return (
         <>
+<div className="page-one-bg">
 <section id="categories_text_container">
 <div className="container-fluid">
     <div className="row my-3 align-items-center">
@@ -133,8 +152,10 @@ function Categories() {
         </div>
     </div>
 </section>
+</div>
         </>
     )
+                    }
 }
 
 export default Categories

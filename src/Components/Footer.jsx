@@ -55,21 +55,27 @@ function Footer() {
                         <p className="footer-link pt-3">{footerText.emailAddress}</p> 
                         </div>
                         <div className="col-4 col-sm-12 col-lg-6 d-flex align-items-end pl-3 mb-3">
-                        <NavLink active className="footer-link footer_sm_logos mr-4" to="/">
-                                  <div>
-                                    <img src={FooterWatsappLogo} class="img-responsive footer_smlogo"></img>
+                        {/* <NavLink active className="footer-link footer_sm_logos mr-4" to="/"> */}
+                                  <div className="footer-link footer_sm_logos mr-4">
+                                    <a href="#" target="_blank">
+                                        <img src={FooterWatsappLogo} class="img-responsive footer_smlogo" />
+                                    </a>
                                   </div>    
-                                  </NavLink >
-                                  <NavLink active className="footer-link footer_sm_logos mr-4" to="/">
-                                  <div>
-                                    <img src={FooterInstaLogo} class="img-responsive footer_smlogo"></img>
+                                  {/* </NavLink > */}
+                                  {/* <NavLink active className="footer-link footer_sm_logos mr-4" to="/"> */}
+                                  <div className="footer-link footer_sm_logos mr-4">
+                                    <a href="https://www.instagram.com/amakeinco/" target="_blank">
+                                        <img src={FooterInstaLogo} class="img-responsive footer_smlogo" />
+                                    </a>
                                   </div>    
-                                  </NavLink >  
-                                  <NavLink active className="footer-link footer_sm_logos mr-4" to="/">
-                                  <div>
-                                    <img src={FooterFacebookLogo} class="img-responsive footer_smlogo"></img>
+                                  {/* </NavLink >   */}
+                                  {/* <NavLink active className="footer-link footer_sm_logos mr-4" to="/"> */}
+                                  <div className="footer-link footer_sm_logos mr-4">
+                                    <a href="https://www.facebook.com/amakeinco/" target="_blank">
+                                        <img src={FooterFacebookLogo} class="img-responsive footer_smlogo" />
+                                    </a>
                                   </div>    
-                            </NavLink >  
+                            {/* </NavLink >   */}
                         </div>
                     </div>
                 </div>

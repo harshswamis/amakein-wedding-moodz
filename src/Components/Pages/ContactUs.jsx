@@ -1,10 +1,28 @@
 import React from 'react'
 import "./ContactUs.css";
+import ContactUsBackground from "../Images/background-common.jpg";
 
-function Contactus() {
+class Contactus extends React.Component {
+
+   constructor () {
+       super()
+    this.state = {
+
+    }
+    }
+
+    componentDidMount ()
+    {
+      document.body.style.backgroundImage = `url(${ContactUsBackground})`;
+      document.body.style.backgroundPosition = "center";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundSize = "cover";   
+    }
+
+render () {
     return (
-        <div>
-            <section>
+        <>
+<section>
     <div className="container-fluid">
         <div className="row">
             {/* <div className="col-5"></div> */}
@@ -52,12 +70,10 @@ function Contactus() {
         {/* <div className="col-1"></div> */}
       </div>    
      </div>   
-
-
-
 </section>  
-        </div>
+        </>
     )
+}
 }
 
 export default Contactus

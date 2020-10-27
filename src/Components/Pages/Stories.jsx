@@ -2,8 +2,25 @@ import React from 'react'
 import Web from "../Images/img-home-background.JPG";
 import WebHandpickedImg from "../Images/img_f0326e.png"
 import "./Stories.css"
+import StoriesBackground from "../Images/background-common.jpg";
 
-function Stories() {
+class Stories extends React.Component {
+
+      constructor() {
+          super()
+          this.state = {}
+      }
+
+      componentDidMount ()
+      {
+        document.body.style.backgroundImage = `url(${StoriesBackground})`;
+        document.body.style.backgroundPosition = "center";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "cover";   
+      }
+
+      render() {
+
     return (
 <>
 <section>
@@ -236,9 +253,10 @@ function Stories() {
             <div className="col-sm-1 my-5"></div>  
         </div>    
      </div>            
-  </section>      
+  </section>   
 </>
     )
+}
 }
 
 export default Stories

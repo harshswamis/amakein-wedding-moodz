@@ -21,7 +21,7 @@
   } */
 
 #header {
-margin-top: 320px;
+padding-top: 320px;
   }
   
   .col12{
@@ -98,3 +98,4 @@ margin-top: 320px;
   word-wrap: unset;
   display: inline-flex;
 }
+

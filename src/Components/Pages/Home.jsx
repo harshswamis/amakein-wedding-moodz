@@ -2,10 +2,29 @@ import React from 'react'
 import "./Home.css"
 import VendorSearchBoxIcon from "../Images/Icons _ vectors/vendor@4x.png";
 import CitySearchBoxIcon from "../Images/Icons _ vectors/location@4x.png"
+import HomeBackground from "../Images/background-6.jpg"
 
-function Home() {
+class Home extends React.Component {
+
+  constructor () {
+    super()
+ 
+    this.state = {
+
+    }
+  }
+
+  componentDidMount ()
+  {
+    document.body.style.backgroundImage = `url(${HomeBackground})`;
+    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  }
+
+  render () {
     return (
-  <>
+  <div className="home">
   <section id="header">
     <div className="container-fluid">
     <div className="row mb-4">
@@ -26,8 +45,8 @@ function Home() {
 </div>
 </section>
 <section>
-  <div className="container-fluid">
-    <div className="row search_row mb-5">
+  <div className="container-fluid pb-5">
+    <div className="row search_row ">
       <div className="col-12 mx-auto">
           <div className="row my-2">
             <div className="col-5">
@@ -54,8 +73,9 @@ function Home() {
     </div>
   </div>
 </section>
-        </>
+        </div>
     )
+}
 }
 
 export default Home

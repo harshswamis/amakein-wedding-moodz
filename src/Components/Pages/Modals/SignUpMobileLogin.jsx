@@ -1,6 +1,10 @@
 import React from 'react'
 import "./SignUpMobileLogin.css"
 import WMLogo from "../../Images/Logo/Main Logo.png";
+import GoogleSignInLogo from "../../Images/Logo/google-logo.png";
+import FacebookSignInLogo from "../../Images/Logo/facebook-logo.png";
+import TwitterSignInLogo from "../../Images/Logo/twitter-logo.png";
+
 
 function SignUpMobileLogin(props) {
     return (
@@ -63,13 +67,19 @@ function SignUpMobileLogin(props) {
                                 <div className="col-12 d-flex justify-content-center">
                                 <div className="row mb-5">
                                     <div className="col-4">
-                                    <button type="button" class="btn btn-danger shadow-none contactus_button_edit">Submit</button>
+                                    <button type="button" class="btn btn-danger shadow-none signInLogo_button_edit">
+                                    <img src={TwitterSignInLogo} class="img-responsive signInTwitter_logo"></img>
+                                    </button>
                                     </div>
                                     <div className="col-4 d-flex justify-content-center">
-                                    <button type="button" class="btn btn-danger shadow-none contactus_button_edit">Submit</button>
+                                    <button type="button" class="btn btn-danger shadow-none signInLogo_button_edit">
+                                    <img src={FacebookSignInLogo} class="img-responsive signInFacebook_logo"></img>
+                                    </button>
                                     </div>
                                     <div className="col-4">
-                                    <button type="button" class="btn btn-danger shadow-none contactus_button_edit">Submit</button>
+                                    <button type="button" class="btn btn-danger shadow-none signInLogo_button_edit">
+                                    <img src={GoogleSignInLogo} class="img-responsive signInGoogle_logo"></img>
+                                    </button>
                                     </div>
                                 </div>
                                 </div>

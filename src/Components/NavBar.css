@@ -4,23 +4,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 
 .navbar {
-    padding-top: 50px;
-    background-color: transparent !important;
+    padding-top: 30px;
+    background-color: rgba(245, 245, 245, 0.3) !important;
   }
 
   .navbar_brand_logo {
-  font-size: 1.2rem !important;
+  font-size: 18px !important;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 5px;
   font-weight: 300px;
-  color: whitesmoke;
-  top:50%;
-  bottom:50%;
+  color: #f0326e;
   }
 
   .wmlogo_navbar {
-     width: 15%;
-     height: 15%;
+     width: 20%;
+     height: 90%;
   }
   
   .nav-item {
@@ -28,15 +26,15 @@
     font-weight: bold;
     padding-right: 30px;
     text-decoration: none;
-    top:50%;
-    bottom:50%;
   }
+  
   .nav_menu_text {
-    color: whitesmoke;
+    color: #262626;
+    font-weight: bolder;
   }
 
   .nav_menu_text:hover {
-    color: #802c6e;
+    color: #f0326e;
     font-weight: bolder;
   }
   
