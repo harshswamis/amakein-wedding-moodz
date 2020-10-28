@@ -2,7 +2,7 @@ import React from 'react';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "./App.css";
-import {useLocation, Switch, Route, Redirect} from "react-router-dom";
+import { Switch, Route, Redirect} from "react-router-dom";
 import Categories from './Components/Pages/Categories';
 import Stories from './Components/Pages/Stories';
 import ContactUs from './Components/Pages/ContactUs';
@@ -37,11 +37,6 @@ class App extends React.Component {
         this.setState({backgroundImage : image})
   }
 
-  HeaderView() {
-   const location = useLocation();
-   alert(location.path);
-  }
-
   componentDidMount() {
 
   }
@@ -55,6 +50,7 @@ render() {
 
   return (
     <div className="App">
+      
       <NavBar />
       <Switch>
       <Route exact path="/" component={Home} />
@@ -65,6 +61,7 @@ render() {
       <Redirect to="/" />
       </Switch>
       <Footer />
+      
     </div>
   )
 }

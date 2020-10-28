@@ -72,6 +72,23 @@ padding-top: 320px;
   margin-right: 12px;
 }
 
+.currentLocation_searchbox_icon {
+   height: 1.5vw;
+   width: 1.5vw;
+   background-color: transparent;
+}
+
+.currentLocationButton {
+   outline: none;
+   border: none;
+   background-color: transparent;
+}
+
+.currentLocationButton:focus {
+  outline: none;
+}
+
+
 .get_started_button {
   width: 12vw;
   padding: 2px 12px;
@@ -82,8 +99,8 @@ padding-top: 320px;
 
 .get_started_button:hover {
  padding: 2px 12px;
- background-color: #e48900;
- border-color: #e48900;
+ background-color: #b80d71;
+ border-color: #b80d71;
  border-radius: 0%;
 }
 
@@ -98,4 +115,3 @@ padding-top: 320px;
   word-wrap: unset;
   display: inline-flex;
 }
-

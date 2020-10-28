@@ -11,6 +11,7 @@ class Stories extends React.Component {
           this.state = {}
       }
 
+    // stories background image setup
       componentDidMount ()
       {
         document.body.style.backgroundImage = `url(${StoriesBackground})`;
@@ -42,6 +43,8 @@ class Stories extends React.Component {
                 <div id="stories_cards_carousel"className="carousel slide" data-ride="carousel" data-interval="false">
                      <div className="carousel-inner">
                          <div className="carousel-item active">
+
+{/* cards */}
                                <div className="container">
                                    <div className="row">
                                      <div className="col-4">
@@ -152,6 +155,8 @@ class Stories extends React.Component {
                         <div className="col-10">
                      <div className="carousel-inner">
                          <div className="carousel-item active">
+
+{/* handpicked by wedding moodz cards */}
                                <div className="container-fluid">
                                    <div className="row">
                                      <div className="col-3">

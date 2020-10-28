@@ -8,8 +8,26 @@ import FAQPhoneLogo from "../Images/Icons _ vectors/phone@4x.png";
 import FAQEmailLogo from "../Images/Icons _ vectors/mail@4x.png";
 import {NavLink} from "react-router-dom";
 import ReactTooltip from "react-tooltip";
+import FAQsBackground from "../Images/background-common.jpg";
 
-function FAQs() {
+class FAQs extends React.Component {
+
+     constructor() {
+       super()
+       this.state = {
+
+       }
+     }
+
+     //FAQ background setup on component mounting
+     componentDidMount ()
+     {
+       document.body.style.backgroundImage = `url(${FAQsBackground})`;
+       document.body.style.backgroundPosition = "center";
+       document.body.style.backgroundRepeat = "no-repeat";
+       document.body.style.backgroundSize = "cover";   
+     }
+     render() {
     return (
         <>
             <section>
@@ -25,6 +43,8 @@ function FAQs() {
                         </div>
                     {/* </div> */}
                     {/* <div className="row"> */}
+      
+{/* Search any question search box */}
                         <div className="col-12 d-flex justify-content-center inline-block">
                         <div className="d-flex inline-block align-items-center faq_searchbox">
                         <input className="form-control faq_textbox shadow-none" type="text" placeholder="search any question..." aria-label="Search" />
@@ -45,6 +65,8 @@ function FAQs() {
                             <div className="row mt-4">
                                 <div className="col-12 col-sm-3"></div>
                                 <div className="col-12 col-sm-9">
+
+{/* Frequently asked questions area */}
                                     <p className="faq_content_text">
                                         <h5>Frequently Asked Questions</h5>
                                         <h6>Returns</h6>
@@ -62,6 +84,8 @@ function FAQs() {
                                 </div>
                             </div>
                         </div>
+
+{/* Have a questions form */}
                         <div className="col-12 col-sm-4 d-flex align-items-center justify-content-center">
                             <div className="row">
                                 <div className="col-12 haveaques_form my-4 mx-4">
@@ -95,6 +119,8 @@ function FAQs() {
               <div className="container-fluid">
                 <div className="row my-5">
                     {/* <div className="col-4"></div> */}
+
+{/* Social media links */}
                     <div className="col-10 col-sm-4 mx-auto d-flex justify-content-center faq_socialmedia_icons">
                                 <NavLink active className="footer-link mr-4" to="/">
                                   <div>
@@ -106,16 +132,18 @@ function FAQs() {
                                     <img src={FAQWatsappLogo} class="img-responsive faq_smlogo" />
                                   </div>    
                                 </NavLink >
-                                <NavLink active className="footer-link mr-4" to="/">
+                                <div active className="footer-link mr-4" to="/">
+                                   <a href="https://www.instagram.com/amakeinco/" target="_blank">
+                                   <img src={FAQInstaLogo} class="img-responsive faq_smlogo" />
+                                   </a>
                                   <div>
-                                    <img src={FAQInstaLogo} class="img-responsive faq_smlogo" />
                                   </div>    
-                                </NavLink >  
-                                <NavLink active className="footer-link mr-4" to="/">
-                                  <div>
-                                    <img src={FAQFacebookLogo} class="img-responsive faq_smlogo" />
-                                  </div>    
-                                </NavLink >
+                                </div >  
+                                <div active className="footer-link mr-4" to="/">
+                                   <a href="https://www.facebook.com/amakeinco/" target="_blank">
+                                   <img src={FAQFacebookLogo} class="img-responsive faq_smlogo" />
+                                  </a>                                 
+                                </div >
                                 <NavLink active className="footer-link mr-4" to="/">
                                   <div>
                                     <img src={FAQEmailLogo} class="img-responsive faq_smlogo" />
@@ -128,6 +156,7 @@ function FAQs() {
             </section>
                         </>
     )
+}
 }
 
 export default FAQs

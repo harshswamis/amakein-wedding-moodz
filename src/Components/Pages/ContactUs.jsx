@@ -43,7 +43,9 @@ render () {
         <div className="col-12 col-sm-6">
             <div className="row">
                 <div className="col-1"></div>
-                <div className="col-10 contactus_form">
+
+{/* contact us form */}
+                <form className="col-10 contactus_form">
                        <div className="my-2">
                         <label for="exampleFormControlInput1" className="form-label text_label">Name</label>
                         <input type="text" className="form-control shadow-none text_box" id="exampleFormControlInput1" />
@@ -63,7 +65,7 @@ render () {
                         <div className="mb-3 mr-5 d-flex justify-content-end">
                         <button type="button" class="btn btn-danger shadow-none contactus_button_edit">Sign Up</button>
                         </div>
-                </div>
+                </form>
                 <div className="col-1"></div>
                 </div>
         </div>

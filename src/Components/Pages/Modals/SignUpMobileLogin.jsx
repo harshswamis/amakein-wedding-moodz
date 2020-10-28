@@ -1,16 +1,32 @@
 import React from 'react'
 import "./SignUpMobileLogin.css"
-import WMLogo from "../../Images/Logo/Main Logo.png";
-import GoogleSignInLogo from "../../Images/Logo/google-logo.png";
-import FacebookSignInLogo from "../../Images/Logo/facebook-logo.png";
-import TwitterSignInLogo from "../../Images/Logo/twitter-logo.png";
+import WMLogo from "../../Images/Logo/Main Logo.png"
 
+class SignUpMobileLogin extends React.Component {
 
-function SignUpMobileLogin(props) {
+    constructor() {
+        super()
+        this.state = {
+           inputMobileNo: ""
+        }
+        this.handleChange = this.handleChange.bind(this)
+    }
+
+//record input no. in to the state onChange event
+    handleChange (event) {
+        const {name, value} = event.target;
+          this.setState({
+               [name] : value
+          })
+          console.log(this.state.inputMobileNo)
+    }
+
+render() {
+
     return (
         <>
             <div className="container-fluid">
-                <div id={props.id} className="modal">
+                <div id={this.props.id} className="modal">
                     <div className="modal-dialog modal-lg">
                         <div className="modal-content" role="document">
                         <div className="modal-header">
@@ -19,21 +35,21 @@ function SignUpMobileLogin(props) {
                             <div className="col-12 d-flex flex-column">
                             <div className="row">
                                 <div className="col-12 d-flex justify-content-end my-1">
-                                <button type="button" className="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" className="btn-close shadow-none" data-dismiss="modal" aria-label="Close"></button>
                                 </div>
                             </div>
-                            <div className="row">
+                            
                                 <div className="col-12 d-flex justify-content-center mb-4">
                                 <div>
-                                <img src={WMLogo} class="img-responsive wmlogo_tandc"></img>
+                                <img src={WMLogo} className="img-responsive wmlogo_tandc"></img>
                                 </div>
                                 </div>       
-                            </div>
-                            <div className="row">
+                            {/* </div> */}
+                            
                                 <div className="col-12 d-flex justify-content-center mb-2">
                                 <h5 className="modal-title"><strong>Sign Up/Sign In</strong></h5>
                                 </div>
-                            </div>
+                            {/* </div> */}
                         </div>
                         </div>
                         </div>
@@ -43,47 +59,51 @@ function SignUpMobileLogin(props) {
                             <div className="row">
                             <div className="col-12 d-flex flex-column">
                             <div className="row">
+
+{/* Enter mobile number form */}
+                                <form>
+                                    <div className="col-12 d-flex justify-content-center">
+                                    <div className="mb-2">
+                                        <input type="tel" className="form-control shadow-none text_box" name="inputMobileNo" value={this.state.inputMobileNo} onChange={this.handleChange} id="exampleFormControlInput1" placeholder="Enter Mobile Number" />
+                                    </div>
+                                    </div>
+                        
+{/* Submit button */}
+                                    <div className="col-12 d-flex justify-content-center">
+                                    <div className="my-4">
+                                        <button className="btn btn-danger shadow-none contactus_button_edit">Submit</button>
+                                    </div>
+                                    </div>
+                                </form>
+                            {/* </div> */}
+                            
                                 <div className="col-12 d-flex justify-content-center">
-                                <div className="mb-2">
-                                    <input type="tel" className="form-control shadow-none text_box" id="exampleFormControlInput1" placeholder="Enter Mobile Number" />
-                                </div>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-12 d-flex justify-content-center">
-                                <div className="my-4">
-                                    <button type="button" class="btn btn-danger shadow-none contactus_button_edit">Submit</button>
-                                </div>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-12 d-flex justify-content-center">
-                                <div className="mb-3">
+                                <div className="mb-1">
                                     <p>OR</p>
                                 </div>
                                 </div>
-                            </div>
-                            <div className="row">
+
+{/* Social media links  */}
                                 <div className="col-12 d-flex justify-content-center">
                                 <div className="row mb-5">
                                     <div className="col-4">
-                                    <button type="button" class="btn btn-danger shadow-none signInLogo_button_edit">
-                                    <img src={TwitterSignInLogo} class="img-responsive signInTwitter_logo"></img>
+                                    <button type="button" className="btn btn-danger shadow-none signInLogo_button_edit">
+                                    <i className="fab fa-twitter-square"></i>
                                     </button>
                                     </div>
                                     <div className="col-4 d-flex justify-content-center">
-                                    <button type="button" class="btn btn-danger shadow-none signInLogo_button_edit">
-                                    <img src={FacebookSignInLogo} class="img-responsive signInFacebook_logo"></img>
+                                    <button type="button" className="btn btn-danger shadow-none signInLogo_button_edit">
+                                    <i className="fab fa-facebook-square"></i>
                                     </button>
                                     </div>
                                     <div className="col-4">
-                                    <button type="button" class="btn btn-danger shadow-none signInLogo_button_edit">
-                                    <img src={GoogleSignInLogo} class="img-responsive signInGoogle_logo"></img>
+                                    <button type="button" className="btn btn-danger shadow-none signInLogo_button_edit">
+                                     <i className="fab fa-google-plus-square"></i>
                                     </button>
                                     </div>
                                 </div>
                                 </div>
-                            </div>
+                            {/* </div> */}
                             </div>
                             </div>
                         </div>
@@ -91,11 +111,13 @@ function SignUpMobileLogin(props) {
                             <div className="container">
                             <div className="row">
                             <div className="col-12 d-flex flex-column mt-4">
+
+{/* Business vendor login button */}
                             <div className="row">
                                 <div className="col-12 d-flex justify-content-center inline-block">
                                 <div className="mb-2">
                                     <p>Are you a vendor?</p>
-                                    <button type="button" class="btn btn-danger shadow-none contactus_button_edit">Business Login</button>
+                                    <button type="button" className="btn btn-danger shadow-none contactus_button_edit">Business Login</button>
                                 </div>
                                 </div>
                             </div>
@@ -108,8 +130,10 @@ function SignUpMobileLogin(props) {
                 </div>
             </div>
             </div>
+            </div>
         </>
     )
+}
 }
 
 export default SignUpMobileLogin

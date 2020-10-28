@@ -2,6 +2,8 @@ import React from 'react'
 import "./TermsAndConditions.css";
 import WMLogo from "../../Images/Logo/Main Logo.png";
 
+//terms and conditions modal
+
 function TermsAndConditions(props) {
     return (
         <>
@@ -15,7 +17,7 @@ function TermsAndConditions(props) {
                             <div className="col-12 d-flex flex-column">
                             <div className="row">
                                 <div className="col-12 d-flex justify-content-end">
-                                <button type="button" className="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" className="btn-close shadow-none" data-dismiss="modal" aria-label="Close"></button>
                                 </div>
                             </div>
                             <div className="row">
@@ -35,12 +37,16 @@ function TermsAndConditions(props) {
                             <div className="col-12">
                             <div className="row">
                             <div className="col-12 termsConditions_text">
+
+{/* Terms and conditions body */}
                              <div className="row">
                                  <div className="col-12">
                                      <p>Terms & Conditions</p>
                                  </div>
                              </div>
                              <div className="row">
+
+{/* Terms and conditions content */}
                                  <div className="col-12">
                                             <p className="font-weight-light">Before you can begin to determine what the composition of a particular paragraph will be, you must first decide on an argument and a working thesis statement for your paper. What is the most important idea that you are trying to convey to your reader? The information in each paragraph must be related to that idea. In other words, your paragraphs should remind your reader that there is a recurrent relationship between your thesis and the information in each paragraph. A working thesis functions like a seed from which your paper, and your ideas, will grow. The whole process is an organic one—a natural progression from a seed to a full-blown paper where there are direct, familial relationships between all of the ideas in the paper.
 
@@ -69,6 +75,8 @@ function TermsAndConditions(props) {
                                 <div className="row">
                                 <div className="col-12 d-flex justify-content-center align-items-center">
                                 <div className="mr-1">
+
+{/* accept the terms and conditions checkbox */}
                                 <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckChecked" />
                                 </div>
                                 <label class="form-check-label" for="flexCheckChecked">
@@ -76,6 +84,8 @@ function TermsAndConditions(props) {
                                 </label>
                                 </div>
                                 </div>
+
+{/* submit button */}
                                 <div className="row mt-1 mb-2">
                                     <div className="col-12 d-flex justify-content-center">
                                 <button type="button" class="btn btn-danger shadow-none contactus_button_edit">Submit</button>

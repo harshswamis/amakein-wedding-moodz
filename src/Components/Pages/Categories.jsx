@@ -1,17 +1,37 @@
 import React from 'react'
-import Web from "../Images/img-1.jpg";
+import {NavLink} from "react-router-dom"
 import "../Pages/Categories.css";
 
 import CategoriesBackground from "../Images/background-common.jpg";
+import CategoriesCards from './CategoriesCards';
+import Web from "../Images/img-1.jpg";
+
 
 class Categories extends React.Component {
 
    constructor() {
        super()
        this.state = {
+           displayItems : "row scroll_list"
        }
+
+       this.handleClick = this.handleClick.bind(this)
    }
 
+   //changing the css class to view all items onClick event handler
+   handleClick() {
+        this.setState(prevState => {
+            if(prevState.displayItems === "row scroll_list"){
+            return {displayItems : "row displayAllItems"}}
+            
+            return {displayItems : "row scroll_list"}
+
+           //prevState.displayItems === "row scroll_list" ? this.setState({displayItems : "row displayAllItems"}) : this.state({displayItems : "row scroll_list"})
+
+        })
+   }
+
+   //Categories background wallpaper setup 
    componentDidMount ()
    {
      document.body.style.backgroundImage = `url(${CategoriesBackground})`;
@@ -31,10 +51,14 @@ class Categories extends React.Component {
         <div className="col-md-2 mx-auto">
             <h1 className="text-center categories_text">Categories</h1>
         </div>
+
+{/* view all button */}
         <div className="col-md-5 text-center">
-            <button type="button" class="btn btn-danger shadow-none button_edit">View All</button>
+            <button type="button" class="btn btn-danger shadow-none button_edit" onClick={this.handleClick}>View All</button>
         </div>
     </div>
+
+{/* build your dream text section */}
     <div className="row my-4 align-items-center">
         <div className="col-12 col-sm-7 mx-auto">
         <h4 className="text-center category_content_text">Build your dream wedding team from the verified list of best wedding photographers, wedding venues, bridal makeup artists, wedding decor and more. We always choose our vendors who are from the best!</h4>
@@ -47,105 +71,22 @@ class Categories extends React.Component {
     <div className="container-fluid">
         <div className="row mb-5">
             <div className="col-sm-2 d-flex align-items-end justify-content-center">
+
+{/* FAQ icon link */}
                 <div className="row text-right">
-                    <div className="d-none d-sm-block  col-sm-2 text-center faq_text">FAQ's</div>
+                    <div className="d-none d-sm-block  col-sm-2 text-center faq_text">      
+                    <NavLink active className="mr-4" to="/FAQs">
+                        <i className="fas fa-question-circle"></i>
+                    </NavLink>  
+                    </div>
                 </div>
             </div>
             <div className="col-12 col-sm-10 text-center">
-                <div className="row scroll_list">
+                <div className={this.state.displayItems}>
                   <div className="col-12">
-                    <div className="row">
-                        <div className="my-4 col-xl-4 col-lg-3 col-2">  
-                            <img src={Web} className="img-fluid my_image" alt="..." />
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        <div className="my-4 col-xl-4 col-lg-3 col-2">  
-                            <img src={Web} className="img-fluid my_image" alt="..." />
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        <div className="my-4 col-xl-4 col-lg-3 col-2">  
-                            <img src={Web} className="img-fluid my_image" alt="..." />
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        {/* <div className="col-xl-4 col-lg-3 col-md-4 col-xl-4 col-lg-3 col-2">  
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        <div className="col-xl-4 col-lg-3 col-md-4 col-xl-4 col-lg-3 col-2">  
-                        <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        <div className="col-xl-4 col-lg-3 col-md-4 col-xl-4 col-lg-3 col-2">  
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>                  */}
-                    </div>
-                    <div className="row">
-                        <div className="my-4 col-xl-4 col-lg-3 col-2">  
-                            <img src={Web} className="img-fluid my_image" alt="..." />
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        <div className="my-4 col-xl-4 col-lg-3 col-2">  
-                            <img src={Web} className="img-fluid my_image" alt="..." />
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        <div className="my-4 col-xl-4 col-lg-3 col-2">  
-                            <img src={Web} className="img-fluid my_image" alt="..." />
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div> 
-                        {/* <div className="col-xl-4 col-lg-3 col-md-4 col-xl-4 col-lg-3 col-2">  
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        <div className="col-xl-4 col-lg-3 col-md-4 col-xl-4 col-lg-3 col-2">  
-                        <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        <div className="col-xl-4 col-lg-3 col-md-4 col-xl-4 col-lg-3 col-2">  
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>                  */}
-                    </div>
-                    <div className="row">
-                        <div className="my-4 col-xl-4 col-lg-3 col-2">  
-                            <img src={Web} className="img-fluid my_image" alt="..." />
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        <div className="my-4 col-xl-4 col-lg-3 col-2">  
-                            <img src={Web} className="img-fluid my_image" alt="..." />
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        <div className="my-4 col-xl-4 col-lg-3 col-2">  
-                            <img src={Web} className="img-fluid my_image" alt="..." />
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        {/* <div className="col-xl-4 col-lg-3 col-md-4 col-xl-4 col-lg-3 col-2">  
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        <div className="col-xl-4 col-lg-3 col-md-4 col-xl-4 col-lg-3 col-2">  
-                        <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        <div className="col-lg-3 col-md-4 col-lg-3 col-2">  
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>                   */}
-                    </div>
-                    <div className="row">
-                        <div className="my-4 col-xl-4 col-lg-3 col-2">  
-                            <img src={Web} className="img-fluid my_image" alt="..." />
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        <div className="my-4 col-xl-4 col-lg-3 col-2">  
-                            <img src={Web} className="img-fluid my_image" alt="..." />
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        <div className="my-4 col-xl-4 col-lg-3 col-2">  
-                            <img src={Web} className="img-fluid my_image" alt="..." />
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div> 
-                        {/* <div className="col-xl-4 col-lg-3 col-md-4 col-xl-4 col-lg-3 col-2">  
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        <div className="col-xl-4 col-lg-3 col-md-4 col-xl-4 col-lg-3 col-2">  
-                        <h5 className="image_text">Text goes here!</h5>
-                        </div>
-                        <div className="col-xl-4 col-lg-3 col-md-4 col-xl-4 col-lg-3 col-2">  
-                            <h5 className="image_text">Text goes here!</h5>
-                        </div>                  */}
-                    </div>
+
+{/* categories cards component call */}
+                    <CategoriesCards />                                               
                   </div>
                 </div>
             </div>

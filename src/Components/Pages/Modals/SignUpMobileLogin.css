@@ -18,21 +18,6 @@
     border-top: 0 none;
 }
 
-.signInGoogle_logo {
-    height: 15px;
-    width: 50px;
-}
-
-.signInFacebook_logo {
-    height: 13px;
-    width: 68px;
-}
-
-.signInTwitter_logo {
-    height: 13px;
-    width: 62px;
-}
-
 .signInLogo_button_edit {
     border-radius: 50px;
     padding: 3px 10px;
@@ -49,5 +34,29 @@
    background-color: transparent;
    transform: scale(1.5);
    transition: 50ms;
+}
+
+.signInLogo_button_edit:focus {
+    border-radius: 50px;
+    font-size: x-small;
+    background-color: transparent;
+    transform: scale(1.5);
+    transition: 50ms;
+    background: none;
+ }
+
+.fa-twitter-square {
+    color: #00acee;
+    font-size: 30px;
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+    font-size: 30px;
+}
+
+.fa-google-plus-square {
+    color: #db3236;
+    font-size: 30px;
 }
 

@@ -11,6 +11,13 @@
     overflow-x: hidden;
     overflow-y: initial;
   }
+
+  .displayAllItems {
+    width: 1000px;
+    height: 950px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
   
   .scroll_list::-webkit-scrollbar{
     width: 8px;
@@ -90,6 +97,14 @@
     background-color: #E00047;
   
   }
+
+  .button_edit:focus {
+    border-radius: 50px;
+    padding: 2px 25px;
+    font-size: small;
+    background-color: #F0326E;
+    border-color: #F0326E;  
+  }
   
   .scroll_col {
     background-color: rosybrown;
@@ -100,3 +115,14 @@
     font-weight: bold;
   }
   
+  .fa-question-circle {
+    color: #F0326E;
+    font-size: 50px;
+  }
+
+  .fa-question-circle:hover {
+    color: #E00047;
+    font-size: 50px;
+    transform: scale(1.5);
+    transition: 100ms;
+  }
