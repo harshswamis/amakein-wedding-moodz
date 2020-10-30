@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import CategoryCardPage from '../CategoryCardPage'
+import VendorCardData from "../VendorCardData";
 
 class InvitesAndGifts extends Component {
     constructor() {
@@ -12,7 +13,7 @@ class InvitesAndGifts extends Component {
     render() {
         return (
             <div>
-                Invites and Gifts
+                <CategoryCardPage pageTitle="Invites and Gifts" vendorCardData={VendorCardData}/>
             </div>
         )
     }

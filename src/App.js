@@ -63,7 +63,8 @@ render() {
       <Route exact path="/stories" component={Stories} />
       <Route exact path="/contactus" component={ContactUs} />
       <Route exact path="/FAQs" component={FAQs} />
-      <CategoriesPageRouting />
+      <Route path="/categories/:id" component={CategoryCardPage}/>
+      {/* <CategoriesPageRouting /> */}
       <Redirect to="/error" component={Error404} />
       </Switch>
       <Footer />

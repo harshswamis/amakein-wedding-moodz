@@ -17,7 +17,7 @@ render() {
 
 // card with its text        
         <div className="my-4 col-xl-4 col-lg-3 col-2">  
-            <NavLink to={this.props.card.toLink}>
+            <NavLink to={`/categories/${this.props.card.id}`}>
                 <img src={Web} className="img-fluid my_image" alt="..." />
             </NavLink>
                 <h5 className="image_text text-center">{this.props.card.cardText}</h5>          

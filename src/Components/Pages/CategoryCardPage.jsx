@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
+import CategoriesCardData from "./CategoriesCardData"
 import VendorCard from './VendorCard'
-import VendorCardData from "./VendorCardData"
 
 export class CategoryCardPage extends Component {
     
@@ -11,9 +11,21 @@ export class CategoryCardPage extends Component {
         }
    }
 
+componentDidMount() {
+    this.fetchItem();
+    console.log(this.props.match);
+}
+
+   fetchItem = async () => {
+       const fetchItem = await fetch("fetch-url-with-specific-id");
+       //can match the id from ${this.props.match.params.id} with the fetch id to land on right page.
+       const item = await fetchItem.json();
+       console.log(item);
+   }
+
     render() {
             
-        const vendorData = VendorCardData.map(vendorCard => {
+        const vendorData = CategoriesCardData.map(vendorCard => {
              return <VendorCard vendorCard={vendorCard}/>
         })
 
@@ -21,9 +33,9 @@ export class CategoryCardPage extends Component {
             <>
            <section>
             <div className="container-fluid">
-                <div className="row ml-5 mt-5 my-4">
+                <div className="row ml-4 mt-5 my-4">
                     <div className="col-6">
-                        <h3><strong>{this.props.pageTitle}</strong></h3>
+                        <h3><strong>{this.props.match.params.cardText}</strong></h3>
                     </div>
                     <div className="col-6">
                     <div className="d-flex inline-block align-items-center faq_searchbox">

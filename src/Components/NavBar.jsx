@@ -21,7 +21,7 @@ function NavBar(props) {
 
 {/* Wedding moodz logo and text */}
               <NavLink className="navbar-brand" to="/home">
-                <img src={WMLogo} class="img-responsive wmlogo_navbar"></img>
+                <img src={WMLogo} className="img-responsive wmlogo_navbar"></img>
                 <span className="navbar_brand_logo">WEDDING MOODZ</span>     
               </NavLink>
               </div>
@@ -55,7 +55,7 @@ function NavBar(props) {
                   <li className="nav-item">
                     {/* <NavLink exact activeClassName="menu_active" className="nav-link" to="/"> */}
                     <div className="mt-1">
-                      <button type="button" class="btn btn-danger shadow-none signup_button_edit" data-target="#SignUpMobileLogin" data-toggle="modal">Sign Up</button>
+                      <button type="button" className="btn btn-danger shadow-none signup_button_edit" data-target="#SignUpMobileLogin" data-toggle="modal">Sign Up</button>
                       <SignUpMobileLogin id="SignUpMobileLogin" />
                     </div>
                       {/* </NavLink> */}
@@ -65,7 +65,7 @@ function NavBar(props) {
                 </div>
                 </div>
             </nav>
-         <div data-spy="scroll" data-target="#navbar-example3" data-offset="0" tabindex="0"></div>
+         <div data-spy="scroll" data-target="#navbar-example3" data-offset="0" tabIndex="0"></div>
        </div>
 {/* <div className="col-1"></div> */}
          </div>

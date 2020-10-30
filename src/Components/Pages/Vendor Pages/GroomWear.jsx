@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
+import CategoryCardPage from '../CategoryCardPage'
+import VendorCardData from "../VendorCardData";
 
 class GroomWear extends Component {
 
     render() {
         return (
             <div>
-                GroomWear
+               <CategoryCardPage pageTitle="Groom Wear" vendorCardData={VendorCardData}/>
             </div>
         )
     }

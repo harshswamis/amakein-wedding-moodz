@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import CategoryCardPage from '../CategoryCardPage'
+import VendorCardData from "../VendorCardData";
 
 export class Venues extends Component {
     constructor() {
@@ -10,7 +12,7 @@ export class Venues extends Component {
     render() {
         return (
             <div>
-                Venues
+                <CategoryCardPage pageTitle="Venues" vendorCardData={VendorCardData}/>
             </div>
         )
     }

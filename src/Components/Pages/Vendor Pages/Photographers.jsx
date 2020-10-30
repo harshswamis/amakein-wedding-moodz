@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import CategoryCardPage from '../CategoryCardPage'
+import VendorCardData from "../VendorCardData";
 
 class Photographers extends Component {
     constructor() {
@@ -11,7 +12,7 @@ class Photographers extends Component {
     render() {
         return (
             <div>
-                <CategoryCardPage pageTitle="Wedding Photographers"/>
+                <CategoryCardPage pageTitle="Wedding Photographers" vendorCardData={VendorCardData}/>
             </div>
         )
     }

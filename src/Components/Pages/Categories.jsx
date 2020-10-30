@@ -61,7 +61,7 @@ class Categories extends React.Component {
 
 {/* view all button */}
         <div className="col-md-5 text-center">
-    <button type="button" class="btn btn-danger shadow-none button_edit" onClick={this.handleClick}>{this.state.viewButtonText}</button>
+    <button type="button" className="btn btn-danger shadow-none button_edit" onClick={this.handleClick}>{this.state.viewButtonText}</button>
         </div>
     </div>
 
@@ -82,7 +82,7 @@ class Categories extends React.Component {
 {/* FAQ icon link */}
                 <div className="row text-right">
                     <div className="d-none d-sm-block  col-sm-2 text-center faq_text">      
-                    <NavLink active className="mr-4" to="/FAQs">
+                    <NavLink className="mr-4" to="/FAQs">
                         <i className="fas fa-question-circle"></i>
                     </NavLink>  
                     </div>

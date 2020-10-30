@@ -49,12 +49,12 @@ function Footer() {
 
 {/* Phone no */}
                         <div className="col-4 col-sm-12 d-flex align-items-center">
-                        <img src={FooterPhoneLogo} class="img-responsive footer_smlogo mr-2"></img>
+                        <img src={FooterPhoneLogo} className="img-responsive footer_smlogo mr-2"></img>
                         <p className="footer-link pt-3">{footerText.phoneNo}</p>
                         </div>
 {/* Email address */}
                         <div className="col-4 col-sm-12 col-lg-6 d-flex align-items-center">
-                        <img src={FooterEmailLogo} class="img-responsive footer_smlogo mr-2"></img>
+                        <img src={FooterEmailLogo} className="img-responsive footer_smlogo mr-2"></img>
                         <p className="footer-link pt-3">{footerText.emailAddress}</p> 
                         </div>
 
@@ -63,21 +63,21 @@ function Footer() {
                         {/* <NavLink active className="footer-link footer_sm_logos mr-4" to="/"> */}
                                   <div className="footer-link footer_sm_logos mr-4">
                                     <a href="#" target="_blank">
-                                        <img src={FooterWatsappLogo} class="img-responsive footer_smlogo" />
+                                        <img src={FooterWatsappLogo} className="img-responsive footer_smlogo" />
                                     </a>
                                   </div>    
                                   {/* </NavLink > */}
                                   {/* <NavLink active className="footer-link footer_sm_logos mr-4" to="/"> */}
                                   <div className="footer-link footer_sm_logos mr-4">
                                     <a href="https://www.instagram.com/amakeinco/" target="_blank">
-                                        <img src={FooterInstaLogo} class="img-responsive footer_smlogo" />
+                                        <img src={FooterInstaLogo} className="img-responsive footer_smlogo" />
                                     </a>
                                   </div>    
                                   {/* </NavLink >   */}
                                   {/* <NavLink active className="footer-link footer_sm_logos mr-4" to="/"> */}
                                   <div className="footer-link footer_sm_logos mr-4">
                                     <a href="https://www.facebook.com/amakeinco/" target="_blank">
-                                        <img src={FooterFacebookLogo} class="img-responsive footer_smlogo" />
+                                        <img src={FooterFacebookLogo} className="img-responsive footer_smlogo" />
                                     </a>
                                   </div>    
                             {/* </NavLink >   */}
@@ -89,7 +89,7 @@ function Footer() {
                 <div className="row">         
                 <div className="d-none d-sm-block col-sm-12 text-center">
                     <div>
-                      <img src={FooterWMLogo} class="img-responsive footer_wmlogo"></img>
+                      <img src={FooterWMLogo} className="img-responsive footer_wmlogo"></img>
                     </div>
                       <span className="footer_brand_logo_text">WEDDINGMOODZ</span><br />
                     </div>

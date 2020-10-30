@@ -76,7 +76,7 @@ function PrivacyPolicy(props) {
 
                                 <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckChecked" />
                                 </div>
-                                <label class="form-check-label" for="flexCheckChecked">
+                                <label class="form-check-label" htmlfor="flexCheckChecked">
                                   I've read and I hereby accept the privacy policy
                                 </label>
                                 </div>
