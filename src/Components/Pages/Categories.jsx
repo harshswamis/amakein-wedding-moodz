@@ -1,10 +1,10 @@
 import React from 'react'
-import {NavLink} from "react-router-dom"
+import {BrowserRouter, NavLink, Switch, Route} from "react-router-dom"
 import "../Pages/Categories.css";
-
 import CategoriesBackground from "../Images/background-common.jpg";
 import CategoriesCards from './CategoriesCards';
 import Web from "../Images/img-1.jpg";
+import CategoryCardPage from './CategoryCardPage';
 
 
 class Categories extends React.Component {
@@ -12,7 +12,8 @@ class Categories extends React.Component {
    constructor() {
        super()
        this.state = {
-           displayItems : "row scroll_list"
+           displayItems : "row scroll_list",
+           viewButtonText : "View All"
        }
 
        this.handleClick = this.handleClick.bind(this)
@@ -22,9 +23,15 @@ class Categories extends React.Component {
    handleClick() {
         this.setState(prevState => {
             if(prevState.displayItems === "row scroll_list"){
-            return {displayItems : "row displayAllItems"}}
+            return {
+                      displayItems : "row displayAllItems",
+                      viewButtonText : "View Less"        
+                   }}
             
-            return {displayItems : "row scroll_list"}
+            return {
+                      displayItems : "row scroll_list",
+                      viewButtonText : "View All"
+                   }
 
            //prevState.displayItems === "row scroll_list" ? this.setState({displayItems : "row displayAllItems"}) : this.state({displayItems : "row scroll_list"})
 
@@ -54,7 +61,7 @@ class Categories extends React.Component {
 
 {/* view all button */}
         <div className="col-md-5 text-center">
-            <button type="button" class="btn btn-danger shadow-none button_edit" onClick={this.handleClick}>View All</button>
+    <button type="button" class="btn btn-danger shadow-none button_edit" onClick={this.handleClick}>{this.state.viewButtonText}</button>
         </div>
     </div>
 
@@ -84,9 +91,8 @@ class Categories extends React.Component {
             <div className="col-12 col-sm-10 text-center">
                 <div className={this.state.displayItems}>
                   <div className="col-12">
-
 {/* categories cards component call */}
-                    <CategoriesCards />                                               
+                    <CategoriesCards />                                            
                   </div>
                 </div>
             </div>

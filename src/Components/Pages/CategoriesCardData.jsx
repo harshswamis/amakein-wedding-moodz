@@ -4,63 +4,75 @@
 const cardData = [
     {
         id : 1,
-        cardText : "Bridal Makeup",
-        active: false
+        cardText : "Photographers",
+        active : false,
+        toLink : "/categories/photographers"
     },
     {
         id : 2,
-        cardText : "Bridal Jewellery",
-        active: false
+        cardText : "Make Up",
+        active : false,
+        toLink : "/categories/make-up"
     },
     {
         id : 3,
-        cardText : "Wedding Photographers",
-        active: false
+        cardText : "Bridal Wear",
+        active : false,
+        toLink : "/categories/bridal-wear"
     },
     {
         id : 4,
-        cardText : "Tent & Light Service",
-        active: false
+        cardText : "Groom Wear",
+        active : false,
+        toLink : "/categories/groom-wear"
     },
     {
         id : 5,
-        cardText : "Traditional Dham/catering",
-        active: false
+        cardText : "Mehndi",
+        active : false,
+        toLink : "/categories/mehndi"
     },
     {
         id : 6,
-        cardText : "Mehndi Artists",
-        active: false
+        cardText : "Planning & Decor",
+        active : false,
+        toLink : "/categories/planning-and-decor"
     },
     {
         id : 7,
-        cardText : "Bridal Makeup",
-        active: false
+        cardText : "Food",
+        active : false,
+        toLink : "/categories/food"
     },
     {
         id : 8,
-        cardText : "Bridal Makeup",
-        active: false
+        cardText : "Invites & Gifts",
+        active : false,
+        toLink : "/categories/invites-and-gifts"
     },
     {
         id : 9,
-        cardText : "Bridal Makeup",
-        active: false
+        cardText : "Venues",
+        active : false,
+        toLink : "/categories/venues"
     },
     {
         id : 10,
-        cardText : "Bridal Makeup",
-        active: false
+        cardText : "Music & Dance",
+        active : false,
+        toLink : "/categories/music-and-dance"
     },
     {
         id : 11,
-        cardText : "Bridal Makeup",
-        active: false
+        cardText : "Pandits",
+        active : false,
+        toLink : "/categories/pandits"
     },
     {
         id : 12,
-        cardText : "Bridal Makeup",
-        active: false
+        cardText : "Jewellery Accessories",
+        active : false,
+        toLink : "/categories/jewellery-accessories",
     }
 
 ]

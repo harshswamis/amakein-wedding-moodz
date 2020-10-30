@@ -5,8 +5,6 @@ import "./Pages/Modals/FeedbackModal"
 import FeedbackModal from './Pages/Modals/FeedbackModal';
 import PrivacyPolicy from "./Pages/Modals/PrivacyPolicy";
 import TermsAndConditions from "./Pages/Modals/TermsAndConditions";
-import GetInTouchWithUs from "./Pages/Modals/GetInTouchWithUs";
-import FAQs from "./Pages/FAQs"
 import FooterWMLogo from "./Images/Logo/logo1@4x_withouttext.png";
 import FooterFacebookLogo from "./Images/Icons _ vectors/facebook@4x.png";
 import FooterInstaLogo from "./Images/Icons _ vectors/instagram@4x.png";
@@ -43,12 +41,10 @@ function Footer() {
 {/* FAQ's Link */}
                         <NavLink active className="footer-link mr-4" to="/FAQs">{footerText.faq}</NavLink>
 {/* Get in touch with us Link */}
-                        <NavLink active className="footer-link" to="/" data-target="#GetInTouchWithUs" data-toggle="modal">{footerText.getInTouch}</NavLink >
+                        <NavLink active className="footer-link" to="/contactus">{footerText.getInTouch}</NavLink >
 
 {/* Feedback modal component call */}
                         <FeedbackModal id="FeedbackModal" />
-{/* get in touch with us component call */}
-                        <GetInTouchWithUs id="GetInTouchWithUs" />
                         </div>
 
 {/* Phone no */}

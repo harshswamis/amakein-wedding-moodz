@@ -39,12 +39,22 @@
   .scroll_list::-webkit-scrollbar-thumb:hover {
     background: #2f1a35; 
   }
-  
-  
+  .myocl {
+    background-color: pink;
+  }
+   
   .my_image {
     border-radius: 10%;
-    width: 74%;
+    width: 210px;
   }
+
+  .my_image:hover {
+    border-radius: 10%;
+    width: 71%;
+    transform: scale(1.1);
+    transition: 100ms;
+  }
+  
   
   .image_text {
     font-weight: bold;

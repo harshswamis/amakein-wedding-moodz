@@ -3,21 +3,23 @@
 }
 
 .footer-link {
-    font-size: x-small;
+    font-size: 9.5px;
     text-decoration: none;
     color: #f7aa35;
+    letter-spacing: 0.8px;
 }
 
 .footer-link:hover {
-    font-size: x-small;
+    font-size: 9.5px;
     text-decoration: none;
     color: #ffee00;
 }
 
 .right_footer_text {
-    font-size: x-small;
+    font-size: 9.5px;
     text-decoration: none;
     color: #f7aa35;
+    letter-spacing: 0.8px;
 }
 
 .right_footer_text:hover {
@@ -53,6 +55,7 @@ width: 18vw;
 .footer_allrightsreserved_Text {
    color: #f7aa35;
    font-size: 8px;
+   letter-spacing: 1px;
 }
 
 .footer_smlogo {

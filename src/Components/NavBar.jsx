@@ -53,10 +53,12 @@ function NavBar(props) {
                   </li>
 {/* Sign Up */}
                   <li className="nav-item">
-                    <NavLink exact activeClassName="menu_active" className="nav-link" to="/">
+                    {/* <NavLink exact activeClassName="menu_active" className="nav-link" to="/"> */}
+                    <div className="mt-1">
                       <button type="button" class="btn btn-danger shadow-none signup_button_edit" data-target="#SignUpMobileLogin" data-toggle="modal">Sign Up</button>
                       <SignUpMobileLogin id="SignUpMobileLogin" />
-                      </NavLink>
+                    </div>
+                      {/* </NavLink> */}
                   </li>
                 </ul>
                 </div>

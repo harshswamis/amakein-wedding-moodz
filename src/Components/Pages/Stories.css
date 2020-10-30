@@ -43,19 +43,10 @@
     color: #f7aa35;
 }
 
-#stories_cards_carousel  .carousel-control-prev, #stories_cards_carousel  .carousel-control-next{
-    top: 40%;
-    bottom: 40%;
-    height: 50px;
-    width: 50px;
-    background-size: 100%, 100%;
-    border-radius: 50%;
-    background-color: #f0326e;
-}
-
 .handpicked_card {
     width: 12.5rem;
     height: 13.5rem;
+    margin: auto;
     border-radius: 10%;
     background-color: #262626;
     border: none;
@@ -76,16 +67,18 @@
 .handpicked_card_title {
     padding-bottom: 0%;
     margin-top: 0;
-    font-size:  10px;
-    font-weight: lighter;
+    font-size:  11.5px;
+    font-weight: bold;
     color: whitesmoke;
+    letter-spacing: 0.8px;
 }
 
 .handpicked_card_text {
     padding: 0%;
-    font-size: 7px;
+    font-size: 8.5px;
     font-weight: lighter;
     color: whitesmoke;
+    letter-spacing: 2px;
 }
 
 .handpicked_card_text_2 {
@@ -94,12 +87,29 @@
     color: whitesmoke;
 }
 
-#handpicked_cards_carousel  .carousel-control-prev, #handpicked_cards_carousel  .carousel-control-next{
-    top: 40%;
-    bottom: 40%;
-    height: 50px;
-    width: 50px;
-    background-size: 100%, 100%;
-    border-radius: 50%;
-    background-color: #f0326e;
+button.rec-dot{
+    background-color: transparent;
+    box-shadow: #f0326e;
+    margin-right: 20px;
+    /* box-shadow: none; */
 }
+  
+button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
+    background-color:  #f0326e;
+    box-shadow: 0 0 1px 3px whitesmoke;
+}
+
+button.rec-arrow, button.rec-arrow-left, button.rec-arrow-right  {
+    border: none;
+    background-color: #ff5976;
+    outline: none;
+    color: whitesmoke;
+}
+
+button.rec-arrow:hover, button.rec-arrow:active, button.rec-arrow:focus  {
+    background-color:  #F0326e;
+    color: whitesmoke;
+}
+
+
+

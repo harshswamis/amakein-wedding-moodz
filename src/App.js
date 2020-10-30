@@ -10,6 +10,9 @@ import Home from './Components/Pages/Home';
 import NavBar from "./Components/NavBar";
 import Footer from './Components/Footer';
 import FAQs from "./Components/Pages/FAQs";
+import Error404 from "./Components/Pages/Error404";
+import CategoryCardPage from "./Components/Pages/CategoryCardPage";
+import CategoriesPageRouting from './Components/Pages/CategoriesPageRouting';
 
 
 
@@ -23,6 +26,7 @@ class App extends React.Component {
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       homePath : "/",
+      homePathAlernate : "/home",
       categoriesPath : "/categories",
       storiesPath : "/stories",
       contactUsPath : "/contactus",
@@ -53,12 +57,14 @@ render() {
       
       <NavBar />
       <Switch>
-      <Route exact path="/" component={Home} />
+      <Route exact path={this.state.homePath} component={Home} />
+      <Route exact path={this.state.homePathAlernate} component={Home} />
       <Route exact path="/categories" component={Categories} />
       <Route exact path="/stories" component={Stories} />
       <Route exact path="/contactus" component={ContactUs} />
       <Route exact path="/FAQs" component={FAQs} />
-      <Redirect to="/" />
+      <CategoriesPageRouting />
+      <Redirect to="/error" component={Error404} />
       </Switch>
       <Footer />
       
