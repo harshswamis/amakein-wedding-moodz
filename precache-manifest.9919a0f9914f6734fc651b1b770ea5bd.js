@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2faf239d3c8abfed007236be1007e39a",
+    "revision": "d1b4c715a2966f1eff10f40d4b6be241",
     "url": "/amakein-wedding-moodz/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/amakein-wedding-moodz/static/css/2.974c742c.chunk.css"
   },
   {
-    "revision": "f22c5a0a0f5abdfa92ca",
-    "url": "/amakein-wedding-moodz/static/css/main.38f6b14a.chunk.css"
+    "revision": "b6f6774d3706a3727e4f",
+    "url": "/amakein-wedding-moodz/static/css/main.0cae2751.chunk.css"
   },
   {
     "revision": "913d4533097534409c31",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/amakein-wedding-moodz/static/js/2.3047fa9d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f22c5a0a0f5abdfa92ca",
-    "url": "/amakein-wedding-moodz/static/js/main.ac8cda52.chunk.js"
+    "revision": "b6f6774d3706a3727e4f",
+    "url": "/amakein-wedding-moodz/static/js/main.b1f2fff4.chunk.js"
   },
   {
     "revision": "a0d2c49babf3048e78fd",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/amakein-wedding-moodz/static/media/Main Logo_withouttext.3538c16c.png"
   },
   {
-    "revision": "45701bcba8c4dbbd7aca51e6cbe250ae",
-    "url": "/amakein-wedding-moodz/static/media/background-6.45701bcb.jpg"
+    "revision": "c35318d94b61314fa760c9f812c06b15",
+    "url": "/amakein-wedding-moodz/static/media/background-5.c35318d9.jpg"
   },
   {
     "revision": "c2c3e6ca353e2077defe86ddff5cba80",
