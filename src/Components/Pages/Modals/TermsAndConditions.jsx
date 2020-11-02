@@ -4,11 +4,35 @@ import WMLogo from "../../Images/Logo/Main Logo.png";
 
 //terms and conditions modal
 
-function TermsAndConditions(props) {
+class TermsAndConditions extends React.Component {
+
+    constructor() {
+        super()
+        this.state = {
+           acceptTermsAndConditions: false
+        }
+        this.handleChange = this.handleChange.bind(this)
+    }
+
+//record input no. in to the state onChange event
+    handleChange (event) {
+        const {name, checked} = event.target;
+          this.setState({
+               [name] : checked
+          })
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault()
+        const data = this.state
+        console.log("Final data is", data)
+   }
+
+    render() {
     return (
         <>
             <div className="container-fluid">
-                <div id={props.id} className="modal">
+                <div id={this.props.id} className="modal">
                     <div className="modal-dialog modal-lg">
                         <div className="modal-content" role="document">
                         <div className="modal-header">
@@ -23,7 +47,7 @@ function TermsAndConditions(props) {
                             <div className="row">
                                 <div className="col-12 d-flex justify-content-center mb-0">
                                 <div>
-                                <img src={WMLogo} class="img-responsive wmlogo_tandc"></img>
+                                <img src={WMLogo} className="img-responsive wmlogo_tandc"></img>
                                 </div>
                                 </div>
                             </div>
@@ -72,26 +96,25 @@ function TermsAndConditions(props) {
                             <div className="col-12">
                             <div className="row">
                                 <div className="col-12 ">
-                                <div className="row">
-                                <div className="col-12 d-flex justify-content-center align-items-center">
-                                <div className="mr-1">
-
-{/* accept the terms and conditions checkbox */}
-                                <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckChecked" />
-                                </div>
-                                <label class="form-check-label" for="flexCheckChecked">
-                                  I've read and I hereby accept the terms & conditions
-                                </label>
-                                </div>
-                                </div>
+                                <form className="row" onSubmit={this.handleSubmit}>
+                                    <div className="col-12 d-flex justify-content-center align-items-center">
+                                    
+    {/* accept the terms and conditions checkbox */}                                
+                                        <div className="mr-1">
+                                            <input className="form-check-input shadow-none" name="acceptTermsAndConditions" onChange={this.handleChange} checked={this.state.acceptTermsAndConditions} type="checkbox" value="" id="flexCheckChecked" />
+                                        </div>
+                                            <label className="form-check-label" htmlFor="flexCheckChecked">
+                                                I've read and I hereby accept the terms & conditions
+                                            </label>
+                                    </div>
+                                
 
 {/* submit button */}
-                                <div className="row mt-1 mb-2">
-                                    <div className="col-12 d-flex justify-content-center">
-                                <button type="button" class="btn btn-danger shadow-none contactus_button_edit">Submit</button>
                                 
-                                </div>
-                                </div>
+                                    <div className="col-12 d-flex justify-content-center">
+                                <button type="submit" className="btn btn-danger shadow-none contactus_button_edit">Submit</button>
+                                    </div>
+                                </form>
                                 </div>
                             </div>
                             </div>
@@ -105,6 +128,7 @@ function TermsAndConditions(props) {
             </div>
         </>
     )
+}
 }
 
 export default TermsAndConditions

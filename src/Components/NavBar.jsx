@@ -1,8 +1,8 @@
 import React from 'react'
 import {NavLink} from "react-router-dom";
 import "../Components/NavBar.css";
-import "./Pages/Modals/SignUpMobileLogin"
-import SignUpMobileLogin from './Pages/Modals/SignUpMobileLogin';
+import "./Pages/Modals/SignUpLogin"
+import SignUpLogin from './Pages/Modals/SignUpLogin';
 import WMLogo from "./Images/Logo/Main Logo_withouttext.png";
 
 //Navigation Menu component
@@ -55,8 +55,8 @@ function NavBar(props) {
                   <li className="nav-item">
                     {/* <NavLink exact activeClassName="menu_active" className="nav-link" to="/"> */}
                     <div className="mt-1">
-                      <button type="button" className="btn btn-danger shadow-none signup_button_edit" data-target="#SignUpMobileLogin" data-toggle="modal">Sign Up</button>
-                      <SignUpMobileLogin id="SignUpMobileLogin" />
+                      <button type="button" className="btn btn-danger shadow-none signup_button_edit" data-target="#SignUpLogin" data-toggle="modal">Sign Up</button>
+                      <SignUpLogin id="SignUpLogin" />
                     </div>
                       {/* </NavLink> */}
                   </li>

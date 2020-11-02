@@ -30,8 +30,11 @@
 
 .tandc_body {
     background-color: rgb(245, 238, 238);
-    margin: 1vw 1vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
     border-radius: 5%;
+    font-size: small;
 }
 
 .form-check-label {

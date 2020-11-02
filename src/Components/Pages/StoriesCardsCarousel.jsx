@@ -12,12 +12,14 @@ function StoriesCardsCarousel() {
     ]
 
     const storiesCards = StoriesCardData.map(card => {
-        return <StoriesCard id={card.id} card={card}/>
+        return ( 
+        <StoriesCard id={card.itemId} card={card}/>
+        )
     })
 
     return (
             <div className="container-fluid">
-            <div className="row my-5">
+            <div className="row my-5 py-2">
                 <div className="col-10 mx-auto">
                 <Carousel breakPoints={breakpoints}>
                     {storiesCards}

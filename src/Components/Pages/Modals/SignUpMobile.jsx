@@ -1,8 +1,7 @@
 import React from 'react'
-import "./SignUpMobileLogin.css"
 import WMLogo from "../../Images/Logo/Main Logo.png"
 
-class SignUpMobileLogin extends React.Component {
+class SignUpMobile extends React.Component {
 
     constructor() {
         super()
@@ -18,14 +17,19 @@ class SignUpMobileLogin extends React.Component {
           this.setState({
                [name] : value
           })
-          console.log(this.state.inputMobileNo)
     }
 
-render() {
+    handleSubmit = (event) => {
+        event.preventDefault()
+        const data = this.state
+        console.log("Final data is", data)
+   }
+
+render () {
 
     return (
-        <>
-            <div className="container-fluid">
+        <div>
+           <div className="container-fluid">
                 <div id={this.props.id} className="modal">
                     <div className="modal-dialog modal-lg">
                         <div className="modal-content" role="document">
@@ -61,7 +65,7 @@ render() {
                             <div className="row">
 
 {/* Enter mobile number form */}
-                                <form>
+                                <form onSubmit={this.handleSubmit}>
                                     <div className="col-12 d-flex justify-content-center">
                                     <div className="mb-2">
                                         <input type="tel" className="form-control shadow-none text_box" name="inputMobileNo" value={this.state.inputMobileNo} onChange={this.handleChange} id="exampleFormControlInput1" placeholder="Enter Mobile Number" />
@@ -71,7 +75,7 @@ render() {
 {/* Submit button */}
                                     <div className="col-12 d-flex justify-content-center">
                                     <div className="my-4">
-                                        <button className="btn btn-danger shadow-none contactus_button_edit">Submit</button>
+                                        <button className="btn btn-danger shadow-none contactus_button_edit" type="submit">Submit</button>
                                     </div>
                                     </div>
                                 </form>
@@ -79,7 +83,7 @@ render() {
                             
                                 <div className="col-12 d-flex justify-content-center">
                                 <div className="mb-1">
-                                    <p>OR</p>
+                                    <p><strong>OR</strong></p>
                                 </div>
                                 </div>
 
@@ -130,10 +134,10 @@ render() {
                 </div>
             </div>
             </div>
-            </div>
-        </>
+            </div> 
+        </div>
     )
 }
 }
 
-export default SignUpMobileLogin
+export default SignUpMobile

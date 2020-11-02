@@ -15,9 +15,31 @@ class FAQs extends React.Component {
      constructor() {
        super()
        this.state = {
-
+         questionSearch: "",
+         haveAQuestionName: "",
+         haveAQuestionEmail: "",
+         haveAQuestionQuery: ""
        }
+
+      this.handleChange = this.handleChange.bind(this)
+
      }
+
+
+//record input no. in to the state onChange event
+  handleChange (event) {
+      const {name, value} = event.target;
+        this.setState({
+             [name] : value
+        })
+  }
+
+  handleSubmit = (event) => {
+      event.preventDefault()
+      const data = this.state
+      console.log("Final data is", data)
+ }
+
 
      //FAQ background setup on component mounting
      componentDidMount ()
@@ -46,13 +68,13 @@ class FAQs extends React.Component {
       
 {/* Search any question search box */}
                         <div className="col-12 d-flex justify-content-center inline-block">
-                        <div className="d-flex inline-block align-items-center faq_searchbox">
-                        <input className="form-control faq_textbox shadow-none" type="text" placeholder="search any question..." aria-label="Search" />
+                        <form className="d-flex inline-block align-items-center faq_searchbox" onSubmit={this.handleSubmit}>
+                        <input className="form-control faq_textbox shadow-none" onChange={this.handleChange} name="questionSearch" value={this.state.questionSearch} type="text" placeholder="search any question..." aria-label="Search" />
                         <div className="input-group-append"> 
-                            <button className="faq_searchbutton"><span className="input-group-text red lighten-3" id="basic-text1"><i className="fas fa-search"
+                            <button type="sumbit" className="faq_searchbutton"><span className="input-group-text red lighten-3" id="basic-text1"><i className="fas fa-search"
                                 aria-hidden="true"></i></span></button>
                         </div>
-                        </div>
+                        </form>
                         </div>       
                         </div>
                         </div>
@@ -86,7 +108,7 @@ class FAQs extends React.Component {
                         </div>
 
 {/* Have a questions form */}
-                        <div className="col-12 col-sm-4 d-flex align-items-center justify-content-center">
+                        <form className="col-12 col-sm-4 d-flex align-items-center justify-content-center" onSubmit={this.handleSubmit}>
                             <div className="row">
                                 <div className="col-12 haveaques_form my-4 mx-4">
                         <div className="mt-2 mx-3">
@@ -96,22 +118,22 @@ class FAQs extends React.Component {
                         </div>
                         <div className="mt-2 mx-3">
                         <label for="exampleFormControlInput1" className="form-label faq_text_label">Name</label>
-                        <input type="text" className="form-control shadow-none faq_text_box" id="exampleFormControlInput1" />
+                        <input type="text" className="form-control shadow-none faq_text_box" name="haveAQuestionName" onChange={this.handleChange} value={this.state.haveAQuestionName} id="exampleFormControlInput1" />
                         </div>
                         <div className="mx-3">
                         <label for="exampleFormControlInput1" className="form-label faq_text_label">Email</label>
-                        <input type="email" className="form-control shadow-none faq_text_box" id="exampleFormControlInput1" />
+                        <input type="email" className="form-control shadow-none faq_text_box" name="haveAQuestionEmail" onChange={this.handleChange} value={this.state.haveAQuestionEmail} id="exampleFormControlInput1" />
                         </div>
                         <div className=" mb-3 mx-3">
                         <label for="exampleFormControlTextarea1" className="form-label faq_text_label">Your query</label>
-                        <textarea className="form-control shadow-none faq_text_area" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea className="form-control shadow-none faq_text_area" name="haveAQuestionQuery" onChange={this.handleChange} value={this.haveAQuestionQuery} id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <div className="d-flex justify-content-center">
-                        <button type="button" class="btn btn-danger shadow-none faqform_button_edit"><span className="post_button_text">Post</span></button>
+                        <button type="submit" class="btn btn-danger shadow-none faqform_button_edit"><span className="post_button_text">Post</span></button>
                         </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </section>

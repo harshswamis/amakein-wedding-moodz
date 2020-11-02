@@ -1,9 +1,11 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import WebHandpickedImg from "../Images/img_f0326e.png"
 
 function HandspickedCard(props) {
     return (
         // <div className="col-3">
+        <NavLink to={`/profile/${props.card.id}`} style={{textDecoration : "none"}} >
          <div className="card handpicked_card">
               <img src={WebHandpickedImg} className="card-img-top handpicked_card_image" alt="image-1" />
               <div className="card-body handpicked_card_body">
@@ -11,6 +13,7 @@ function HandspickedCard(props) {
               <p class="card-text handpicked_card_text ml-2">{props.card.cardSubTitle}</p>
               </div>
           </div>
+          </NavLink>
     //   </div>
     )
 }

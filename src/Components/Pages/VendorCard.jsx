@@ -25,7 +25,10 @@ function VendorCard(props) {
                                     {props.vendorCard.vendorTitle}
                                     <img style={props.vendorCard.isVerified ? {marginLeft: "6px", width : "22px"} : {display : "none"}}src={VerifiedIcon} className="card-img-top" alt="image-1" />
                                 </Card.Title>
-                <Card.Title style={reviewBadgeStyle}><i className="fas fa-star mr-1"></i><small>{props.vendorCard.vendorRating}</small></Card.Title>
+                                <Card.Title style={reviewBadgeStyle}>
+                                    <i className="fas fa-star mr-1"></i>
+                                    <small>{props.vendorCard.vendorRating}</small>
+                                </Card.Title>
                             </div>
                             <div className="d-flex justify-content-between">
                             <Card.Text style={{fontSize : "small"}}>

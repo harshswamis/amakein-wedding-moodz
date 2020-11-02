@@ -13,20 +13,47 @@ import FooterPhoneLogo from "./Images/Icons _ vectors/phone@4x.png"
 import FooterEmailLogo from "./Images/Icons _ vectors/mail@4x.png"
 
 //Footer component
-function Footer() {
- 
-      const footerText = {
-          feedback: "Feedback",
-          faq: "FAQ's",
-          getInTouch: "Get in touch with us",
-          phoneNo: "+91-018911187",
-          emailAddress: "email@address.com",
-          socialMediaIcons: "SocialMediaIcons",
-          weddingMoodzLogo: "WEDDING MOODZ LOGO",
-          subscribeNewsletter: "Subscribe to our Newsletter",
-          privacyPolicy: "Privacy Policy",
-          termsConditions: "Terms & Conditions"
-      };
+class Footer extends React.Component {
+
+  constructor() {
+    super()
+    this.state = {
+       newsLetterInput: ""
+    }
+    this.handleChange = this.handleChange.bind(this)
+}
+
+//record input no. in to the state onChange event
+handleChange (event) {
+    const {name, value} = event.target;
+      this.setState({
+           [name] : value
+      })
+}
+
+handleSubmit = (event) => {
+    event.preventDefault()
+    const data = this.state
+    console.log("Final data is", data)
+}
+
+
+
+
+render(){
+
+  const footerText = {
+    feedback: "Feedback",
+    faq: "FAQ's",
+    getInTouch: "Get in touch with us",
+    phoneNo: "+91-018911187",
+    emailAddress: "email@address.com",
+    socialMediaIcons: "SocialMediaIcons",
+    weddingMoodzLogo: "WEDDING MOODZ LOGO",
+    subscribeNewsletter: "Subscribe to our Newsletter",
+    privacyPolicy: "Privacy Policy",
+    termsConditions: "Terms & Conditions"
+};
 
     return (
         <>
@@ -37,11 +64,11 @@ function Footer() {
                         <div className="col-12 col-sm-12 mb-4">
 
 {/* Feedback Link */}
-                        <NavLink active className="footer-link mr-4" to="/" data-target="#FeedbackModal" data-toggle="modal">{footerText.feedback}</NavLink>
+                        <NavLink className="footer-link mr-4" to="/" data-target="#FeedbackModal" data-toggle="modal">{footerText.feedback}</NavLink>
 {/* FAQ's Link */}
-                        <NavLink active className="footer-link mr-4" to="/FAQs">{footerText.faq}</NavLink>
+                        <NavLink className="footer-link mr-4" to="/FAQs">{footerText.faq}</NavLink>
 {/* Get in touch with us Link */}
-                        <NavLink active className="footer-link" to="/contactus">{footerText.getInTouch}</NavLink >
+                        <NavLink className="footer-link" to="/contactus">{footerText.getInTouch}</NavLink >
 
 {/* Feedback modal component call */}
                         <FeedbackModal id="FeedbackModal" />
@@ -60,21 +87,21 @@ function Footer() {
 
 {/* Social media icon links */}
                         <div className="col-4 col-sm-12 col-lg-6 d-flex align-items-end pl-3 mb-3">
-                        {/* <NavLink active className="footer-link footer_sm_logos mr-4" to="/"> */}
+                        {/* <NavLink className="footer-link footer_sm_logos mr-4" to="/"> */}
                                   <div className="footer-link footer_sm_logos mr-4">
                                     <a href="#" target="_blank">
                                         <img src={FooterWatsappLogo} className="img-responsive footer_smlogo" />
                                     </a>
                                   </div>    
                                   {/* </NavLink > */}
-                                  {/* <NavLink active className="footer-link footer_sm_logos mr-4" to="/"> */}
+                                  {/* <NavLink className="footer-link footer_sm_logos mr-4" to="/"> */}
                                   <div className="footer-link footer_sm_logos mr-4">
                                     <a href="https://www.instagram.com/amakeinco/" target="_blank">
                                         <img src={FooterInstaLogo} className="img-responsive footer_smlogo" />
                                     </a>
                                   </div>    
                                   {/* </NavLink >   */}
-                                  {/* <NavLink active className="footer-link footer_sm_logos mr-4" to="/"> */}
+                                  {/* <NavLink className="footer-link footer_sm_logos mr-4" to="/"> */}
                                   <div className="footer-link footer_sm_logos mr-4">
                                     <a href="https://www.facebook.com/amakeinco/" target="_blank">
                                         <img src={FooterFacebookLogo} className="img-responsive footer_smlogo" />
@@ -103,20 +130,20 @@ function Footer() {
 {/* Subscribe to newsletter */}
                                     <div className="col-6 col-sm-12 mb-4">
                                        <h5 className="right_footer_text">{footerText.subscribeNewsletter}</h5 >
-                                       <form className="d-flex">
-                                        <input className="form-control shadow-none mr-2 footer_text_box" type="search" placeholder="" aria-label="Search" />
+                                       <form className="d-flex" onSubmit={this.handleSubmit}>
+                                        <input className="form-control shadow-none mr-2 footer_text_box" name="newsLetterInput" onChange={this.handleChange} type="search" placeholder="" aria-label="Search" />
                                         <button type="submit" className="btn btn-warning btn_footer_submit">Submit</button>
                                         </form>
                                    </div> 
 {/* privacty policy link */}
                                     <div className="col-3 col-sm-12 mb-3">
-                                       <NavLink active className="right_footer_text" to="/" data-target="#PrivacyPolicy" data-toggle="modal">{footerText.privacyPolicy}</NavLink >
+                                       <NavLink className="right_footer_text" to="/" data-target="#PrivacyPolicy" data-toggle="modal">{footerText.privacyPolicy}</NavLink >
 {/* privacy policy modal component call  */}
                                        <PrivacyPolicy id="PrivacyPolicy" />
                                     </div>
 {/* Terms and conditions link */}
                                     <div className="col-3 col-sm-12">
-                                       <NavLink active className="right_footer_text" to="/" data-target="#TermsAndConditions" data-toggle="modal">{footerText.termsConditions}</NavLink >
+                                       <NavLink className="right_footer_text" to="/" data-target="#TermsAndConditions" data-toggle="modal">{footerText.termsConditions}</NavLink >
 {/* Terms and conditions modal component call  */}
                                        <TermsAndConditions id="TermsAndConditions" />
                                    </div>
@@ -127,6 +154,7 @@ function Footer() {
         </div>
         </>
     )
+}
 }
 
 export default Footer

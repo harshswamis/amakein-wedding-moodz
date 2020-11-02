@@ -35,7 +35,7 @@ const HandspickedCardsData = [
         cardSubTitle : "Wedding Photographer",
     },
     {
-        id : 7,
+        id : 8,
         cardTitle : "Pinto Studio",
         cardSubTitle : "Wedding Photographer",
     }

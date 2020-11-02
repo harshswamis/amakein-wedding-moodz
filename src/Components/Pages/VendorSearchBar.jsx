@@ -6,18 +6,18 @@ class VendorSearchBar extends React.Component {
     constructor() {
         super()
         this.state = {
-           vendorCategory: ""
+          
         }
-        this.handleChange = this.handleChange.bind(this)
+       // this.handleChange = this.handleChange.bind(this)
     }
 
     //record the text from the textbox with onChange event
-    handleChange (event) {
-        const {name, value} = event.target;
-          this.setState({
-               [name] : value
-          })
-    }
+    // handleChange (event) {
+    //     const {name, value} = event.target;
+    //       this.setState({
+    //            [name] : value
+    //       })
+    // }
 
 render () {
 

@@ -13,8 +13,8 @@
  }
 
 .stories_card {
-    width: 15rem;
-    height: 18rem;
+    width: 250px;
+    height: 290px;
     margin: auto;
     border-radius: 20%;
     background-color:#262626;

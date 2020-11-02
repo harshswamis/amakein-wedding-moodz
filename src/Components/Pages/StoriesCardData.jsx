@@ -1,43 +1,43 @@
 const storiesCardData = [
     {
-        id : 1,
+        itemId : 1,
         cardTitle : "Mr. & Mrs. Taneja",
-        cardSubTitle : "Good Service very friendly staff",
+        cardSubTitle : "Good Service very friendly staff"
     },
     {
-        id : 2,
+        itemId : 2,
         cardTitle : "Mr. & Mrs. Sharma",
-        cardSubTitle : "Good Service very friendly staff",
+        cardSubTitle : "Good Service very friendly staff"
     },
     {
-        id : 3,
+        itemId : 3,
         cardTitle : "Mr. & Mrs. Bhosale",
-        cardSubTitle : "Good Service very friendly staff",
+        cardSubTitle : "Good Service very friendly staff"
     },
     {
-        id : 4,
+        itemId : 4,
         cardTitle : "Mr. & Mrs. Verma",
-        cardSubTitle : "Good Service very friendly staff",
+        cardSubTitle : "Good Service very friendly staff"
     },
     {
-        id : 5,
+        itemId : 5,
         cardTitle : "Mr. & Mrs. Mittal",
-        cardSubTitle : "Good Service very friendly staff",
+        cardSubTitle : "Good Service very friendly staff"
     },
     {
-        id : 6,
+        itemId : 6,
         cardTitle : "Mr. & Mrs. Bhide",
-        cardSubTitle : "Good Service very friendly staff",
+        cardSubTitle : "Good Service very friendly staff"
     },
     {
-        id : 7,
+        itemId : 7,
         cardTitle : "Mr. & Mrs. Gada",
-        cardSubTitle : "Good Service very friendly staff",
+        cardSubTitle : "Good Service very friendly staff"
     },
     {
-        id : 7,
+        itemId : 8,
         cardTitle : "Mr. & Mrs. Pinto",
-        cardSubTitle : "Good Service very friendly staff",
+        cardSubTitle : "Good Service very friendly staff"
     }
 
 

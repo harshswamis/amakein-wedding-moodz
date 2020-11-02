@@ -7,9 +7,27 @@ export class CategoryCardPage extends Component {
    constructor() {
         super()
         this.state = {
-            pageTitle : ""
+            pageTitle : "",
+            searchVendorInput: ""
         }
+
+    this.handleChange = this.handleChange.bind(this)
+
    }
+
+//record input no. in to the state onChange event
+handleChange (event) {
+    const {name, value} = event.target;
+      this.setState({
+           [name] : value
+      })
+}
+
+handleSubmit = (event) => {
+    event.preventDefault()
+    const data = this.state
+    console.log("Final data is", data)
+}
 
 componentDidMount() {
     this.fetchItem();
@@ -38,13 +56,14 @@ componentDidMount() {
                         <h3><strong>{this.props.match.params.cardText}</strong></h3>
                     </div>
                     <div className="col-6">
-                    <div className="d-flex inline-block align-items-center faq_searchbox">
-                        <input className="form-control faq_textbox shadow-none" type="text" placeholder="search photographers..." aria-label="Search" />
+                    <form className="d-flex inline-block align-items-center faq_searchbox" onSubmit={this.handleSubmit}>
+                        <input className="form-control faq_textbox shadow-none" type="text" name="searchVendorInput" value={this.state.searchVendorInput} onChange={this.handleChange} placeholder="search photographers..." aria-label="Search" />
                         <div className="input-group-append"> 
-                            <button className="faq_searchbutton"><span className="input-group-text red lighten-3" id="basic-text1"><i className="fas fa-search"
-                                aria-hidden="true"></i></span></button>
-                    </div>
-                    </div>
+                            <button type="submit" className="faq_searchbutton"><span className="input-group-text red lighten-3" id="basic-text1"><i className="fas fa-search"
+                                aria-hidden="true"></i></span>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
             </div>

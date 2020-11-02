@@ -12,9 +12,7 @@ import Footer from './Components/Footer';
 import FAQs from "./Components/Pages/FAQs";
 import Error404 from "./Components/Pages/Error404";
 import CategoryCardPage from "./Components/Pages/CategoryCardPage";
-import CategoriesPageRouting from './Components/Pages/CategoriesPageRouting';
-
-
+import StoriesCardPage from "./Components/Pages/StoriesCardPage";
 
 class App extends React.Component {
 
@@ -45,7 +43,6 @@ class App extends React.Component {
 
   }
 
-
 render() {
 
   const mystyle = {
@@ -63,8 +60,8 @@ render() {
       <Route exact path="/stories" component={Stories} />
       <Route exact path="/contactus" component={ContactUs} />
       <Route exact path="/FAQs" component={FAQs} />
-      <Route path="/categories/:id" component={CategoryCardPage}/>
-      {/* <CategoriesPageRouting /> */}
+      <Route path="/categories/:id" component={CategoryCardPage} />
+      <Route path="/stories/:id" component={StoriesCardPage} />
       <Redirect to="/error" component={Error404} />
       </Switch>
       <Footer />
