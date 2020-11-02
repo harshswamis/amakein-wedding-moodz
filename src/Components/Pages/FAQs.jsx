@@ -48,6 +48,7 @@ class FAQs extends React.Component {
        document.body.style.backgroundPosition = "center";
        document.body.style.backgroundRepeat = "no-repeat";
        document.body.style.backgroundSize = "cover";   
+
      }
      render() {
     return (

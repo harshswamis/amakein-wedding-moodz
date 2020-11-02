@@ -13,19 +13,19 @@
   .navbarbg {
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: rgba(245, 245, 245, 0.3) !important;
+    background-color: rgba(245, 245, 245, 0.1) !important;
   }
 
   .navbar_brand_logo {
   font-size: 18px !important;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 5px;
-  font-weight: 300px;
+  /* font-weight: 550px; */
   color: #f0326e;
   }
 
   .wmlogo_navbar {
-     width: 95px;
+     width: 100px;
      height: 50px;
   }
   

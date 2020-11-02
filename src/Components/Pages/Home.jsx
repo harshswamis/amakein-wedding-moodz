@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Home.css"
 
-import HomeBackground from "../Images/background-6.jpg"
+import HomeBackground from "../Images/background-5.jpg"
 import SearchBar from './SearchBar';
 
 
@@ -23,7 +23,10 @@ class Home extends React.Component {
     document.body.style.backgroundPosition = "center";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
-  }
+
+}
+
+  
 
   render () {
     return (
@@ -34,7 +37,7 @@ class Home extends React.Component {
          <div className="col-10 mx-auto">
            <div className="row">
              <div className="col-md-12 pt-lg-0 order-2 order-lg-1">
-              <div className="text-center">
+              <div className="text-center textbg">
                <div className="text-font">
 
 {/* Home text */}
