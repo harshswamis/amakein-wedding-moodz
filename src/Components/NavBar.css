@@ -4,7 +4,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 
 .navbar {
-    padding-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(245, 245, 245, 0) !important;
+    /* background-color: transparent; */
+  }
+
+  .navbarbg {
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: rgba(245, 245, 245, 0.3) !important;
   }
 
@@ -17,8 +25,8 @@
   }
 
   .wmlogo_navbar {
-     width: 18%;
-     height: 90%;
+     width: 95px;
+     height: 50px;
   }
   
   .nav-item {

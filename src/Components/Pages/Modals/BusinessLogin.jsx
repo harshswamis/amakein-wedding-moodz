@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 import WMLogo from "../../Images/Logo/Main Logo.png"
-import BusinessLogin from './BusinessLogin'
+import BusinessSignUp from './BusinessSignUp'
 
-class SignUpMobile extends React.Component {
+class BusinessLogin extends Component {
 
     constructor() {
         super()
         this.state = {
-           inputMobileNo: ""
+           inputVendorMobileNo: ""
         }
         this.handleChange = this.handleChange.bind(this)
     }
@@ -25,7 +25,7 @@ class SignUpMobile extends React.Component {
         const data = this.state
         console.log("Final data is", data)
    }
-
+                
 render () {
 
     return (
@@ -69,7 +69,7 @@ render () {
                                 <form onSubmit={this.handleSubmit}>
                                     <div className="col-12 d-flex justify-content-center">
                                     <div className="mb-2">
-                                        <input type="tel" className="form-control shadow-none text_box" name="inputMobileNo" value={this.state.inputMobileNo} onChange={this.handleChange} id="exampleFormControlInput1" placeholder="Enter Mobile Number" />
+                                        <input type="tel" className="form-control shadow-none text_box" name="inputVendorMobileNo" value={this.state.inputVendorMobileNo} onChange={this.handleChange} id="exampleFormControlInput1" placeholder="Enter Mobile Number" />
                                     </div>
                                     </div>
                         
@@ -80,13 +80,25 @@ render () {
                                     </div>
                                     </div>
                                 </form>
-                            {/* </div> */}
-                            
+
                             </div>
                             </div>
                         </div>
                         <div className="modal-footer">
-                            
+                            <div className="container">
+                            <div className="row">
+{/* Business vendor login button */}
+
+                                <div className="col-12 d-flex justify-content-center align-items-center">
+                                {/* <div className="mb-2"> */}
+                                    <p>Register as a vendor?</p>
+                                    <button type="button" className="btn btn-danger shadow-none ml-2 mb-3 contactus_button_edit" data-target="#SignUpBusiness" data-toggle="modal">Sign Up</button>
+                                    
+                                {/* </div> */}
+                                </div>
+                                <BusinessSignUp id="SignUpBusiness"/>
+                            </div>
+                            </div>
                         </div>
                         </div>
                     </div>
@@ -95,8 +107,8 @@ render () {
             </div>
             </div> 
         </div>
-    )
-}
+        )
+    }
 }
 
-export default SignUpMobile
+export default BusinessLogin

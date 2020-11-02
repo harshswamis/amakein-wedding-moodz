@@ -3,6 +3,7 @@ import "./SignUpLogin.css"
 import WMLogo from "../../Images/Logo/Main Logo.png"
 import SignUpMobile from './SignUpMobile'
 import SignUpEmail from './SignUpEmail'
+import BusinessLogin from './BusinessLogin'
 
 class SignUpLogin extends React.Component {
 
@@ -128,7 +129,8 @@ render() {
                                 <div className="col-12 d-flex justify-content-center inline-block">
                                 <div className="mb-2">
                                     <p>Are you a vendor?</p>
-                                    <button type="button" className="btn btn-danger shadow-none contactus_button_edit">Business Login</button>
+                                    <button type="button" className="btn btn-danger shadow-none contactus_button_edit" data-target="#SignUpBusinessLogin" data-toggle="modal">Business Login</button>
+                                    <BusinessLogin id="SignUpBusinessLogin"/>
                                 </div>
                                 </div>
                             </div>

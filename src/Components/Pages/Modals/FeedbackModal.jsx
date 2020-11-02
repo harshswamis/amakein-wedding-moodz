@@ -34,8 +34,8 @@ render() {
                     <div className="modal-dialog">
                         <div className="modal-content" style={{height: "490px"}}>
                         <div className="modal-header">
-                            <h5 className="modal-title mt-2" style={{fontSize : "25px", fontWeight: "bold"}}>Feedback</h5>
-                            <button type="button" className="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                            <h5 className="modal-title" style={{fontSize : "25px", fontWeight: "bold"}}>Feedback</h5>
+                            <button type="button" className="btn-close mb-3" data-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="ml-3">
                             <h6>Please provide your feedback below:</h6>
